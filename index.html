@@ -5,10 +5,13 @@
 <title>LS Glow by Sandra</title>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   margin: 0;
-  text-align: center;
   background: linear-gradient(135deg, #fffaf0, #f7e7ce);
   color: #5a4632;
 }
@@ -16,32 +19,45 @@ body {
 header {
   background: linear-gradient(90deg, #d4af37, #f5d97b);
   padding: 30px;
+  text-align: center;
   color: white;
   font-size: 28px;
   font-weight: bold;
 }
 
-section {
-  background: white;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 700px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+nav {
+  text-align: center;
+  margin: 20px 0;
 }
 
 nav a {
   display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
+  margin: 8px;
+  padding: 10px 18px;
   background: white;
-  border-radius: 20px;
+  border-radius: 25px;
   text-decoration: none;
   color: #b8860b;
   border: 2px solid #d4af37;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #d4af37;
+  color: white;
+}
+
+section {
+  background: white;
+  margin: 15px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 footer {
+  text-align: center;
   background: #d4af37;
   color: white;
   padding: 15px;
@@ -58,21 +74,22 @@ LS GLOW BY SANDRA 💅
 </header>
 
 <nav>
+<a href="#accueil">Accueil</a>
 <a href="#prestations">Prestations</a>
 <a href="#tarifs">Tarifs</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<section>
+<section id="accueil">
 <h2>Bienvenue ✨</h2>
 <p>Prothésiste ongulaire à domicile 💅<br>
 Saint-Jean-de-Luz et alentours</p>
-<p>Accessible à tous 🤍</p>
+<p>Un service soigné, élégant et accessible à toutes 🤍</p>
 </section>
 
 <section id="prestations">
 <h3>Prestations</h3>
-<p>Pose d’ongles, nail art, press-on nails</p>
+<p>Pose d’ongles, nail art, press-on nails personnalisés</p>
 </section>
 
 <section id="tarifs">
