@@ -6,46 +6,61 @@
 <title>LS Glow by Sandra</title>
 
 <style>
+
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* FOND MARBRE */
 body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
     background: url("marbre.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-</style>
 
-    background: url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-/* voile léger luxe */
+/* OVERLAY */
 .overlay {
-    background: rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.12);
     min-height: 100vh;
-    padding-bottom: 60px;
+    padding: 30px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* HEADER */
 header {
-    padding: 30px 20px;
+    padding: 20px;
+    text-align: center;
 }
 
+/* LOGO CENTRÉ */
 .logo {
     width: 140px;
+    height: 140px;
+    object-fit: cover;
     border-radius: 50%;
     border: 2px solid #d4af37;
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
+/* TITRES */
 h1 {
-    color: #d4af37;
     margin: 10px 0 5px;
+    color: #d4af37;
 }
 
 h2 {
-    color: #c0c0c0;
     margin: 0;
+    color: #c0c0c0;
     font-weight: normal;
 }
 
@@ -65,29 +80,27 @@ nav a:hover {
     color: #c0c0c0;
 }
 
-/* ===== CARTES BLANCHES LUXE ===== */
+/* CARTES */
 .card {
     max-width: 750px;
+    width: 100%;
     margin: 20px auto;
     padding: 20px;
 
-    background: rgba(255,255,255,0.85);
-    border-radius: 18px;
-
-    border: 1px solid rgba(212,175,55,0.5);
+    background: rgba(255,255,255,0.88);
+    border-radius: 15px;
 }
 
-/* ===== ENCADRÉS PRESTATIONS ===== */
+/* ENCADRÉS PRESTATIONS */
 .box {
-    background: rgba(255,255,255,0.95);
+    background: white;
     border: 1px solid #d4af37;
-    border-radius: 12px;
+    border-radius: 10px;
     padding: 15px;
     margin: 10px 0;
-
-    color: #333;
 }
 
+/* TEXTE */
 h3 {
     color: #d4af37;
 }
@@ -97,6 +110,7 @@ p {
     line-height: 1.6;
 }
 
+/* LIENS */
 a {
     color: #d4af37;
     text-decoration: none;
@@ -122,48 +136,44 @@ a {
     </nav>
 </header>
 
-<!-- PRESENTATION -->
 <section id="presentation" class="card">
     <h3>Présentation</h3>
     <p>
-        Bienvenue chez LS Glow by Sandra, prothésiste ongulaire spécialisée dans la mise en beauté des mains et des pieds.
+        Prothésiste ongulaire spécialisée dans les poses gel, capsules et nail art.
     </p>
 </section>
 
-<!-- PRESTATIONS -->
 <section id="prestations" class="card">
 
     <h3>Prestations & Tarifs</h3>
 
     <div class="box">
-        <b>LES MAINS</b><br><br>
+        <b>LES MAINS</b><br>
         Pose gel capsule : 40€<br>
         Pose américaine : 40€<br>
         Gainage : 35€<br>
-        Remplissage gel : 30€<br>
-        Vernis semi-permanent : 20€
+        Remplissage : 30€<br>
+        Semi-permanent : 20€
     </div>
 
     <div class="box">
-        <b>LES PIEDS & DÉPOSE</b><br><br>
-        Semi-permanent pieds : 20€<br>
+        <b>LES PIEDS</b><br>
+        Semi pieds : 20€<br>
         Dépose : 15€
     </div>
 
     <div class="box">
-        <b>SUPPLÉMENTS</b><br><br>
-        Longueur standard : +0€<br>
+        <b>SUPPLÉMENTS</b><br>
         Longueur L : +5€<br>
-        Longueur XL : +10€<br>
+        XL : +10€<br>
         Babyboomer : +8€<br>
         French : +8€<br>
-        Strass : +0,50€ / ongle<br>
-        Nail art : +3€ / ongle
+        Strass : +0,50€<br>
+        Nail art : +3€
     </div>
 
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="card">
 
     <h3>CONTACT</h3>
