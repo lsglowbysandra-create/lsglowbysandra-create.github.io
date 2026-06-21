@@ -8,67 +8,82 @@
 <style>
 body{
     margin:0;
-    font-family: 'Arial', sans-serif;
-    background:#fff7ef;
+    font-family: Arial, sans-serif;
+    background:#fff3e6;
     color:#5a3b1e;
 }
 
 /* HEADER */
 header{
-    background: linear-gradient(135deg,#d4a24c,#fff1d6);
+    background: linear-gradient(135deg,#d4a24c,#ffe7c2);
     text-align:center;
     padding:40px 20px;
 }
 
 header img{
-    width:140px;
-    border-radius:20px;
+    width:150px;
+    border-radius:10px;
 }
 
 header h1{
     margin:10px 0 0;
-    font-size:26px;
-    letter-spacing:1px;
+    font-size:28px;
+    letter-spacing:2px;
 }
 
 header p{
     font-style:italic;
 }
 
-/* NAV */
+/* MENU */
 nav{
     display:flex;
     justify-content:center;
-    gap:10px;
+    gap:12px;
+    flex-wrap:wrap;
     padding:15px;
 }
 
 nav a{
     text-decoration:none;
     padding:10px 18px;
-    border-radius:20px;
-    background:#f5e2c3;
+    border-radius:25px;
+    background:#f3e0c3;
     color:#5a3b1e;
     font-weight:bold;
 }
 
-/* SECTION */
-section{
-    padding:20px;
+/* SECTION INTRO */
+.intro{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    padding:30px;
+    flex-wrap:wrap;
+}
+
+.intro-text{
+    max-width:500px;
+}
+
+.intro img{
+    width:280px;
+    border-radius:15px;
+}
+
+/* TITRES */
+h2{
     text-align:center;
+    margin-top:30px;
 }
 
-.container{
-    max-width:900px;
-    margin:auto;
-}
-
-/* CARDS */
+/* CARTES */
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:15px;
-    margin-top:20px;
+    padding:20px;
 }
 
 .card{
@@ -80,29 +95,29 @@ section{
 
 /* CONTACT */
 .contact{
-    margin-top:30px;
-    padding:20px;
-    background:#fff1d6;
-    border-radius:20px;
+    background:#ffe7c2;
+    padding:30px;
+    text-align:center;
+    margin-top:20px;
 }
 
 .btn{
     display:inline-block;
     margin-top:10px;
-    padding:10px 15px;
-    border-radius:20px;
+    padding:10px 18px;
+    border-radius:25px;
     background:#d4a24c;
     color:white;
     text-decoration:none;
+    margin:5px;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <img src="logo.jpeg" alt="LS Glow logo">
+    <img src="logo.jpeg" alt="logo LS Glow">
     <h1>LS GLOW BY SANDRA</h1>
     <p>Prothésiste Ongulaire 💅</p>
 </header>
@@ -114,51 +129,46 @@ section{
     <a href="#contact">Contact</a>
 </nav>
 
-<section id="accueil">
-<div class="container">
-    <h2>Bienvenue ✨</h2>
-    <p>Prothésiste ongulaire à domicile sur Saint-Jean-de-Luz et alentours.</p>
-</div>
-</section>
-
-<section id="prestations">
-<div class="container">
-    <h2>Prestations</h2>
-
-    <div class="cards">
-        <div class="card">💅 Pose gel capsule</div>
-        <div class="card">✨ Pose américaine</div>
-        <div class="card">🌸 Gainage</div>
-        <div class="card">💖 Remplissage gel</div>
-        <div class="card">💎 Nail art</div>
+<section class="intro" id="accueil">
+    <div class="intro-text">
+        <h2>Bienvenue chez LS Glow by Sandra ✨</h2>
+        <p>
+        Prothésiste ongulaire à domicile 💅<br><br>
+        Je travaille principalement à domicile et me déplace sur Saint-Jean-de-Luz et alentours.<br><br>
+        Prestations personnalisées, ambiance chaleureuse et professionnelle.
+        </p>
     </div>
-</div>
+
+    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371" alt="ongles">
 </section>
 
-<section id="tarifs">
-<div class="container">
-    <h2>Tarifs</h2>
-
-    <div class="cards">
-        <div class="card">Pose gel capsule — 40€</div>
-        <div class="card">Pose américaine — 40€</div>
-        <div class="card">Gainage — 35€</div>
-        <div class="card">Remplissage — 30€</div>
-        <div class="card">Vernis semi-permanent — 20€</div>
-    </div>
+<h2 id="prestations">Prestations</h2>
+<div class="cards">
+    <div class="card">💅 Pose gel capsule</div>
+    <div class="card">✨ Pose américaine</div>
+    <div class="card">🌸 Gainage</div>
+    <div class="card">💖 Remplissage gel</div>
+    <div class="card">💎 Nail art</div>
+    <div class="card">🦶 Beauté des pieds</div>
 </div>
-</section>
 
-<section id="contact">
-<div class="container contact">
+<h2 id="tarifs">Tarifs</h2>
+<div class="cards">
+    <div class="card">Pose gel capsule — 40€</div>
+    <div class="card">Pose américaine — 40€</div>
+    <div class="card">Gainage — 35€</div>
+    <div class="card">Remplissage — 30€</div>
+    <div class="card">Semi permanent — 20€</div>
+</div>
+
+<div class="contact" id="contact">
     <h2>Contact</h2>
-
     <p>📞 06 31 22 09 52</p>
 
+    <a class="btn" href="tel:0631220952">Appeler</a>
     <a class="btn" href="https://wa.me/33631220952">WhatsApp</a>
     <a class="btn" href="https://instagram.com/ls.glow.by.sandra">Instagram</a>
 </div>
-</section>
 
 </body>
 </html>
