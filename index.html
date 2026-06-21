@@ -46,7 +46,6 @@ nav {
     background: rgba(245, 230, 200, 0.95);
     padding: 10px;
     z-index: 1000;
-    backdrop-filter: blur(5px);
 }
 
 nav a {
@@ -61,29 +60,11 @@ nav a {
     max-width: 750px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(245, 230, 200, 0.9);
+    background: rgba(245, 230, 200, 0.92);
     border-radius: 15px;
-
-    /* ANIMATION SCROLL */
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 0.8s ease forwards;
 }
 
-/* animation delay progressive */
-.card:nth-child(1) { animation-delay: 0.1s; }
-.card:nth-child(2) { animation-delay: 0.2s; }
-.card:nth-child(3) { animation-delay: 0.3s; }
-.card:nth-child(4) { animation-delay: 0.4s; }
-
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* BOUTON */
+/* BOUTON RDV */
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -125,7 +106,7 @@ nav a {
     cursor: pointer;
 }
 
-/* ZOOM */
+/* LIGHTBOX */
 .lightbox {
     display: none;
     position: fixed;
@@ -149,7 +130,44 @@ nav a {
     display: flex;
 }
 
-/* WHATSAPP */
+/* 💎 CONTACT LUXE */
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* bouton style luxe */
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 15px;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #f5e6c8, #fff);
+    border: 1px solid #d4af37;
+
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* icônes */
+.icon {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* texte gauche */
+.left {
+    display: flex;
+    align-items: center;
+}
+
+/* WHATSAPP FLOAT */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -179,7 +197,6 @@ nav a {
     <h2>Prothésiste ongulaire</h2>
 </header>
 
-<!-- MENU STICKY -->
 <nav>
     <a href="#presentation">Accueil</a>
     <a href="#prestations">Prestations</a>
@@ -190,11 +207,9 @@ nav a {
 <!-- PRESENTATION -->
 <section id="presentation" class="card">
     <h3>Bienvenue chez LS Glow by Sandra ✨</h3>
-
     <p>
         Prothésiste ongulaire à domicile 💅<br><br>
-        Saint-Jean-de-Luz et alentours 🤍<br><br>
-        Service soigné et personnalisé.
+        Saint-Jean-de-Luz et alentours 🤍
     </p>
 
     <a class="btn" href="https://wa.me/33631220952">📲 Prendre RDV</a>
@@ -207,7 +222,7 @@ nav a {
 
     <div class="box">
         <b>LES MAINS</b>
-        Pose gel capsule 40€<br>
+        Gel capsule 40€<br>
         Américaine 40€<br>
         Gainage 35€<br>
         Remplissage 30€<br>
@@ -241,26 +256,6 @@ nav a {
         <img src="photo4.jpg" onclick="openImg(this.src)">
         <img src="photo5.jpg" onclick="openImg(this.src)">
         <img src="photo6.jpg" onclick="openImg(this.src)">
-        <img src="photo7.jpg" onclick="openImg(this.src)">
-        <img src="photo8.jpg" onclick="openImg(this.src)">
-        <img src="photo9.jpg" onclick="openImg(this.src)">
-        <img src="photo10.jpg" onclick="openImg(this.src)">
-        <img src="photo11.jpg" onclick="openImg(this.src)">
-        <img src="photo12.jpg" onclick="openImg(this.src)">
-        <img src="photo13.jpg" onclick="openImg(this.src)">
-        <img src="photo14.jpg" onclick="openImg(this.src)">
-        <img src="photo15.jpg" onclick="openImg(this.src)">
-        <img src="photo16.jpg" onclick="openImg(this.src)">
-        <img src="photo17.jpg" onclick="openImg(this.src)">
-        <img src="photo18.jpg" onclick="openImg(this.src)">
-        <img src="photo19.jpg" onclick="openImg(this.src)">
-        <img src="photo20.jpg" onclick="openImg(this.src)">
-        <img src="photo21.jpg" onclick="openImg(this.src)">
-        <img src="photo22.jpg" onclick="openImg(this.src)">
-        <img src="photo23.jpg" onclick="openImg(this.src)">
-        <img src="photo24.jpg" onclick="openImg(this.src)">
-        <img src="photo25.jpg" onclick="openImg(this.src)">
-        <img src="photo26.jpg" onclick="openImg(this.src)">
     </div>
 
 </section>
@@ -270,9 +265,25 @@ nav a {
 
     <h3>Contact</h3>
 
-    📞 06.31.22.09.52<br><br>
-    📸 Instagram : @ls.glow.by.sandra<br><br>
-    📧 ls.glow.by.sandra@gmail.com
+    <div class="contact-box">
+
+        <a class="contact-item" href="tel:+33631220952">
+            <div class="left"><span class="icon">📞</span> 06.31.22.09.52</div>
+        </a>
+
+        <a class="contact-item" href="https://instagram.com/ls.glow.by.sandra" target="_blank">
+            <div class="left"><span class="icon">📸</span> Instagram</div>
+        </a>
+
+        <a class="contact-item" href="https://wa.me/33631220952" target="_blank">
+            <div class="left"><span class="icon">💬</span> WhatsApp</div>
+        </a>
+
+        <a class="contact-item" href="mailto:ls.glow.by.sandra@gmail.com">
+            <div class="left"><span class="icon">📧</span> Email</div>
+        </a>
+
+    </div>
 
 </section>
 
@@ -283,7 +294,6 @@ nav a {
     <img id="lightbox-img">
 </div>
 
-<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/33631220952">💬</a>
 
 <script>
