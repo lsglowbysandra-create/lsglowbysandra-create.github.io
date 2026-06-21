@@ -8,11 +8,9 @@
 <style>
 
 /* RESET */
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-/* FOND MARBRE */
+/* FOND */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -34,20 +32,14 @@ body {
 .logo {
     width: 140px;
     height: 140px;
-    object-fit: cover;
     border-radius: 50%;
+    object-fit: cover;
     border: 2px solid #d4af37;
 }
 
 /* TITRES */
-h1 {
-    color: #d4af37;
-}
-
-h2 {
-    color: #000;
-    font-weight: normal;
-}
+h1 { color: #d4af37; }
+h2 { color: #000; font-weight: normal; }
 
 /* NAV */
 nav a {
@@ -62,10 +54,8 @@ nav a {
     max-width: 750px;
     margin: 20px auto;
     padding: 20px;
-
-    background: rgba(245, 230, 200, 0.90);
+    background: rgba(245, 230, 200, 0.9);
     border-radius: 15px;
-    color: #000;
 }
 
 /* BOUTON */
@@ -92,6 +82,31 @@ nav a {
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid #d4af37;
+    cursor: pointer;
+}
+
+/* ZOOM */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.lightbox.active {
+    display: flex;
 }
 
 /* WHATSAPP */
@@ -99,15 +114,15 @@ nav a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #25D366;
     width: 55px;
     height: 55px;
     border-radius: 50%;
+    background: #25D366;
+    color: white;
+    font-size: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 28px;
 }
 
 </style>
@@ -140,9 +155,7 @@ nav a {
         Bienvenue chez LS Glow by Sandra ✨<br>
         Prothésiste ongulaire à domicile 💅<br><br>
 
-        Saint-Jean-de-Luz et alentours<br><br>
-
-        Service soigné, simple et personnalisé 🤍
+        Saint-Jean-de-Luz et alentours 🤍
     </p>
 
     <a class="btn" href="https://wa.me/33631220952">📲 Prendre RDV</a>
@@ -155,20 +168,15 @@ nav a {
     <h3>Prestations & Tarifs</h3>
 
     <b>LES MAINS</b><br>
-    Gel capsule : 40€<br>
-    Américaine : 40€<br>
-    Gainage : 35€<br>
-    Remplissage : 30€<br>
-    Semi-permanent : 20€<br><br>
+    Gel capsule 40€<br>
+    Américaine 40€<br>
+    Gainage 35€<br>
+    Remplissage 30€<br>
+    Semi 20€<br><br>
 
     <b>PIEDS & DÉPOSE</b><br>
-    Pieds : 20€<br>
-    Dépose : 15€<br><br>
-
-    <b>SUPPLÉMENTS</b><br>
-    Babyboomer / French : +8€<br>
-    Strass : +0,50€<br>
-    Nail art : +3€
+    Pieds 20€<br>
+    Dépose 15€
 
 </section>
 
@@ -178,32 +186,32 @@ nav a {
     <h3>Galerie</h3>
 
     <div class="gallery">
-        <img src="photo1.jpg">
-        <img src="photo2.jpg">
-        <img src="photo3.jpg">
-        <img src="photo4.jpg">
-        <img src="photo5.jpg">
-        <img src="photo6.jpg">
-        <img src="photo7.jpg">
-        <img src="photo8.jpg">
-        <img src="photo9.jpg">
-        <img src="photo10.jpg">
-        <img src="photo11.jpg">
-        <img src="photo12.jpg">
-        <img src="photo13.jpg">
-        <img src="photo14.jpg">
-        <img src="photo15.jpg">
-        <img src="photo16.jpg">
-        <img src="photo17.jpg">
-        <img src="photo18.jpg">
-        <img src="photo19.jpg">
-        <img src="photo20.jpg">
-        <img src="photo21.jpg">
-        <img src="photo22.jpg">
-        <img src="photo23.jpg">
-        <img src="photo24.jpg">
-        <img src="photo25.jpg">
-        <img src="photo26.jpg">
+        <img src="photo1.jpg" onclick="openImg(this.src)">
+        <img src="photo2.jpg" onclick="openImg(this.src)">
+        <img src="photo3.jpg" onclick="openImg(this.src)">
+        <img src="photo4.jpg" onclick="openImg(this.src)">
+        <img src="photo5.jpg" onclick="openImg(this.src)">
+        <img src="photo6.jpg" onclick="openImg(this.src)">
+        <img src="photo7.jpg" onclick="openImg(this.src)">
+        <img src="photo8.jpg" onclick="openImg(this.src)">
+        <img src="photo9.jpg" onclick="openImg(this.src)">
+        <img src="photo10.jpg" onclick="openImg(this.src)">
+        <img src="photo11.jpg" onclick="openImg(this.src)">
+        <img src="photo12.jpg" onclick="openImg(this.src)">
+        <img src="photo13.jpg" onclick="openImg(this.src)">
+        <img src="photo14.jpg" onclick="openImg(this.src)">
+        <img src="photo15.jpg" onclick="openImg(this.src)">
+        <img src="photo16.jpg" onclick="openImg(this.src)">
+        <img src="photo17.jpg" onclick="openImg(this.src)">
+        <img src="photo18.jpg" onclick="openImg(this.src)">
+        <img src="photo19.jpg" onclick="openImg(this.src)">
+        <img src="photo20.jpg" onclick="openImg(this.src)">
+        <img src="photo21.jpg" onclick="openImg(this.src)">
+        <img src="photo22.jpg" onclick="openImg(this.src)">
+        <img src="photo23.jpg" onclick="openImg(this.src)">
+        <img src="photo24.jpg" onclick="openImg(this.src)">
+        <img src="photo25.jpg" onclick="openImg(this.src)">
+        <img src="photo26.jpg" onclick="openImg(this.src)">
     </div>
 
 </section>
@@ -214,19 +222,32 @@ nav a {
     <h3>Contact</h3>
 
     📞 06.31.22.09.52<br><br>
-
-    💬 WhatsApp : <a href="https://wa.me/33631220952">Envoyer message</a><br><br>
-
-    📸 Instagram : @ls.glow.by.sandra<br><br>
-
+    💬 WhatsApp<br>
+    📸 Instagram @ls.glow.by.sandra<br><br>
     📧 ls.glow.by.sandra@gmail.com
 
 </section>
 
 </div>
 
-<!-- WHATSAPP FLOAT -->
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeImg()">
+    <img id="lightbox-img">
+</div>
+
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/33631220952">💬</a>
+
+<script>
+function openImg(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").classList.add("active");
+}
+
+function closeImg() {
+    document.getElementById("lightbox").classList.remove("active");
+}
+</script>
 
 </body>
 </html>
