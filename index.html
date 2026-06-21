@@ -12,16 +12,16 @@ body {
     color: #fff;
     text-align: center;
 
-    /* VRAI FOND MARBRE */
-    background: url("https://images.unsplash.com/photo-1584467735871-8a2c6f3a1b3d?auto=format&fit=crop&w=1400&q=80");
+    /* 💎 VRAI MARBRE CLAIR */
+    background: url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=80");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* overlay luxe */
+/* overlay léger (PAS NOIR) */
 .overlay {
-    background: linear-gradient(135deg, rgba(0,0,0,0.78), rgba(120,80,20,0.65));
+    background: rgba(0,0,0,0.35);
     min-height: 100vh;
     padding-bottom: 60px;
 }
@@ -45,7 +45,7 @@ h1 {
 
 h2 {
     margin: 0;
-    color: #f5d08a;
+    color: #ffd89b;
     font-weight: normal;
 }
 
@@ -55,7 +55,7 @@ nav {
 }
 
 nav a {
-    color: #f5d08a;
+    color: #ffd89b;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
@@ -65,22 +65,29 @@ nav a:hover {
     color: gold;
 }
 
-/* CARTES */
+/* 💎 CARTES ULTRA LUXE */
 .card {
-    background: linear-gradient(135deg, rgba(255,165,0,0.15), rgba(255,215,0,0.1));
-    border: 1px solid rgba(255,215,0,0.5);
-    border-radius: 15px;
     max-width: 700px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 22px;
+
+    /* transparent chic */
+    background: rgba(255,255,255,0.06);
+
+    border-radius: 18px;
+
+    /* OR + ORANGE */
+    border: 1px solid rgba(255, 215, 0, 0.7);
+    box-shadow: 0 0 18px rgba(255, 165, 0, 0.25);
 }
 
 h3 {
     color: gold;
+    letter-spacing: 1px;
 }
 
 p {
-    color: #f7e6c4;
+    color: #ffe7c2;
     line-height: 1.6;
 }
 
@@ -101,7 +108,6 @@ a {
     <h1>LS GLOW BY SANDRA</h1>
     <h2>Prothésiste ongulaire</h2>
 
-    <!-- MENU CORRIGÉ -->
     <nav>
         <a href="#presentation">Accueil</a>
         <a href="#prestations">Prestations & Tarifs</a>
@@ -109,7 +115,6 @@ a {
     </nav>
 </header>
 
-<!-- PRESENTATION -->
 <section id="presentation" class="card">
     <h3>Présentation</h3>
     <p>
@@ -118,7 +123,6 @@ a {
     </p>
 </section>
 
-<!-- PRESTATIONS + TARIFS ENSEMBLE -->
 <section id="prestations" class="card">
     <h3>Prestations & Tarifs</h3>
 
@@ -145,20 +149,19 @@ a {
     </p>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="card">
     <h3>CONTACT</h3>
 
     <p>
         📞 06.31.22.09.52<br><br>
 
-        💬 WhatsApp : 
+        💬 WhatsApp :
         <a href="https://wa.me/33631220952">Envoyer un message</a><br><br>
 
-        📸 Instagram : 
+        📸 Instagram :
         <a href="https://instagram.com/ls.glow.by.sandra">@ls.glow.by.sandra</a><br><br>
 
-        📧 Email : 
+        📧 Email :
         <a href="mailto:ls.glow.by.sandra@gmail.com">
             ls.glow.by.sandra@gmail.com
         </a>
@@ -168,4 +171,4 @@ a {
 </div>
 
 </body>
-</html>
+</html>    
