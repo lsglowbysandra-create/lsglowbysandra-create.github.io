@@ -20,6 +20,7 @@ body {
     background-attachment: fixed;
 }
 
+/* OVERLAY */
 .overlay {
     min-height: 100vh;
     padding: 30px 10px;
@@ -30,15 +31,24 @@ body {
     width: 140px;
     height: 140px;
     object-fit: cover;
+    border-radius: 10px;
     border: 2px solid #d4af37;
-    border-radius: 10px; /* carré arrondi léger */
 }
 
 /* TITRES */
 h1 { color: #d4af37; }
 h2 { color: #000; font-weight: normal; }
 
-/* NAV */
+/* NAV STICKY */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(245, 230, 200, 0.95);
+    padding: 10px;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
 nav a {
     margin: 0 10px;
     color: #d4af37;
@@ -53,6 +63,24 @@ nav a {
     padding: 20px;
     background: rgba(245, 230, 200, 0.9);
     border-radius: 15px;
+
+    /* ANIMATION SCROLL */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+/* animation delay progressive */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* BOUTON */
@@ -66,19 +94,19 @@ nav a {
     text-decoration: none;
 }
 
-/* 👉 PRESTATIONS */
+/* PRESTATIONS */
 .box {
     background: rgba(255,255,255,0.6);
     border-radius: 10px;
     padding: 15px;
-    margin-bottom: 25px; /* 🔥 INTERLIGNE ENTRE BLOCS */
+    margin-bottom: 20px;
     color: #000;
 }
 
 .box b {
     display: block;
     font-size: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 /* GALERIE */
@@ -149,32 +177,27 @@ nav a {
     <img src="logo.jpeg" class="logo">
     <h1>LS GLOW BY SANDRA</h1>
     <h2>Prothésiste ongulaire</h2>
-
-    <nav>
-        <a href="#presentation">Accueil</a>
-        <a href="#prestations">Prestations & Tarifs</a>
-        <a href="#galerie">Galerie</a>
-        <a href="#contact">Contact</a>
-    </nav>
 </header>
+
+<!-- MENU STICKY -->
+<nav>
+    <a href="#presentation">Accueil</a>
+    <a href="#prestations">Prestations</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#contact">Contact</a>
+</nav>
 
 <!-- PRESENTATION -->
 <section id="presentation" class="card">
-
     <h3>Bienvenue chez LS Glow by Sandra ✨</h3>
 
     <p>
         Prothésiste ongulaire à domicile 💅<br><br>
-
-        Je me déplace à Saint-Jean-de-Luz et alentours pour des prestations soignées et personnalisées.<br><br>
-
-        Chaque personne est la bienvenue 🤍<br><br>
-
-        Service accessible, respectueux et adapté à toutes et tous, dans une ambiance simple et bienveillante.
+        Saint-Jean-de-Luz et alentours 🤍<br><br>
+        Service soigné et personnalisé.
     </p>
 
     <a class="btn" href="https://wa.me/33631220952">📲 Prendre RDV</a>
-
 </section>
 
 <!-- PRESTATIONS -->
@@ -184,27 +207,24 @@ nav a {
 
     <div class="box">
         <b>LES MAINS</b>
-        Pose gel capsule : 40€<br>
-        Pose américaine : 40€<br>
-        Gainage : 35€<br>
-        Remplissage gel : 30€<br>
-        Vernis semi-permanent : 20€
+        Pose gel capsule 40€<br>
+        Américaine 40€<br>
+        Gainage 35€<br>
+        Remplissage 30€<br>
+        Semi 20€
     </div>
 
     <div class="box">
         <b>LES PIEDS & DÉPOSE</b>
-        Semi-permanent pieds : 20€<br>
-        Dépose : 15€
+        Pieds 20€<br>
+        Dépose 15€
     </div>
 
     <div class="box">
         <b>SUPPLÉMENTS</b>
-        Longueur L : +5€<br>
-        XL : +10€<br>
-        Babyboomer : +8€<br>
-        French : +8€<br>
-        Strass : +0,50€<br>
-        Nail art : +3€
+        Babyboomer / French +8€<br>
+        Strass +0,50€<br>
+        Nail art +3€
     </div>
 
 </section>
