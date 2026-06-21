@@ -26,7 +26,7 @@ body {
 
 /* OVERLAY */
 .overlay {
-    background: rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.10);
     min-height: 100vh;
     padding: 30px 10px;
 
@@ -35,20 +35,13 @@ body {
     align-items: center;
 }
 
-/* HEADER */
-header {
-    padding: 20px;
-    text-align: center;
-}
-
-/* LOGO CENTRÉ */
+/* LOGO */
 .logo {
     width: 140px;
     height: 140px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #d4af37;
-    display: block;
     margin: 0 auto 10px auto;
 }
 
@@ -76,10 +69,6 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #c0c0c0;
-}
-
 /* CARTES */
 .card {
     max-width: 750px;
@@ -87,27 +76,52 @@ nav a:hover {
     margin: 20px auto;
     padding: 20px;
 
-    background: rgba(255,255,255,0.88);
+    background: rgba(255,255,255,0.85);
     border-radius: 15px;
 }
 
-/* ENCADRÉS PRESTATIONS */
+/* 🟧 ENCADRÉS ORANGE DÉGRADÉ */
 .box {
-    background: white;
-    border: 1px solid #d4af37;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px 0;
+    background: linear-gradient(135deg, #ffb347, #ff7f50);
+    border-radius: 12px;
+    padding: 18px;
+    margin: 12px 0;
+
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* 🔠 TITRES PRESTATIONS */
+.box b {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* TITRES */
+h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 /* TEXTE */
-h3 {
-    color: #d4af37;
-}
-
 p {
     color: #333;
     line-height: 1.6;
+}
+
+/* BOUTON RDV */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #d4af37;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* LIENS */
@@ -136,34 +150,50 @@ a {
     </nav>
 </header>
 
+<!-- PRESENTATION -->
 <section id="presentation" class="card">
+
     <h3>Présentation</h3>
+
     <p>
-        Prothésiste ongulaire spécialisée dans les poses gel, capsules et nail art.
+        Bienvenue chez LS Glow by Sandra ✨<br>
+        Prothésiste ongulaire à domicile 💅<br><br>
+
+        Je me déplace à Saint-Jean-de-Luz et alentours pour des prestations soignées et personnalisées.<br><br>
+
+        Chaque personne est la bienvenue 🤍<br><br>
+
+        Je propose un service accessible, respectueux et adapté à toutes et tous, dans une ambiance simple et bienveillante.
     </p>
+
+    <a class="btn" href="https://wa.me/33631220952">
+        📲 Prendre RDV
+    </a>
+
 </section>
 
+<!-- PRESTATIONS -->
 <section id="prestations" class="card">
 
     <h3>Prestations & Tarifs</h3>
 
     <div class="box">
-        <b>LES MAINS</b><br>
+        <b>LES MAINS</b>
         Pose gel capsule : 40€<br>
         Pose américaine : 40€<br>
         Gainage : 35€<br>
-        Remplissage : 30€<br>
-        Semi-permanent : 20€
+        Remplissage gel : 30€<br>
+        Vernis semi-permanent : 20€
     </div>
 
     <div class="box">
-        <b>LES PIEDS</b><br>
-        Semi pieds : 20€<br>
+        <b>LES PIEDS & DÉPOSE</b>
+        Semi-permanent pieds : 20€<br>
         Dépose : 15€
     </div>
 
     <div class="box">
-        <b>SUPPLÉMENTS</b><br>
+        <b>SUPPLÉMENTS</b>
         Longueur L : +5€<br>
         XL : +10€<br>
         Babyboomer : +8€<br>
@@ -174,24 +204,23 @@ a {
 
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="card">
 
     <h3>CONTACT</h3>
 
-    <p>
-        📞 06.31.22.09.52<br><br>
+    📞 06.31.22.09.52<br><br>
 
-        💬 WhatsApp :
-        <a href="https://wa.me/33631220952">Envoyer un message</a><br><br>
+    💬 WhatsApp :
+    <a href="https://wa.me/33631220952">Envoyer un message</a><br><br>
 
-        📸 Instagram :
-        <a href="https://instagram.com/ls.glow.by.sandra">@ls.glow.by.sandra</a><br><br>
+    📸 Instagram :
+    <a href="https://instagram.com/ls.glow.by.sandra">@ls.glow.by.sandra</a><br><br>
 
-        📧 Email :
-        <a href="mailto:ls.glow.by.sandra@gmail.com">
-            ls.glow.by.sandra@gmail.com
-        </a>
-    </p>
+    📧 Email :
+    <a href="mailto:ls.glow.by.sandra@gmail.com">
+        ls.glow.by.sandra@gmail.com
+    </a>
 
 </section>
 
