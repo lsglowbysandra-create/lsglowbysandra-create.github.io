@@ -12,18 +12,21 @@ body {
     color: #fff;
     text-align: center;
 
-    /* fond marbre */
-    background: url("https://images.unsplash.com/photo-1616627981047-84b1f0c6c1b2?auto=format&fit=crop&w=1200&q=80");
+    /* VRAI FOND MARBRE */
+    background: url("https://images.unsplash.com/photo-1584467735871-8a2c6f3a1b3d?auto=format&fit=crop&w=1400&q=80");
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 
+/* overlay luxe */
 .overlay {
-    background: linear-gradient(135deg, rgba(0,0,0,0.75), rgba(90,60,10,0.7));
+    background: linear-gradient(135deg, rgba(0,0,0,0.78), rgba(120,80,20,0.65));
     min-height: 100vh;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
+/* HEADER */
 header {
     padding: 30px 20px;
 }
@@ -42,10 +45,11 @@ h1 {
 
 h2 {
     margin: 0;
-    font-weight: normal;
     color: #f5d08a;
+    font-weight: normal;
 }
 
+/* MENU */
 nav {
     margin-top: 20px;
 }
@@ -66,7 +70,7 @@ nav a:hover {
     background: linear-gradient(135deg, rgba(255,165,0,0.15), rgba(255,215,0,0.1));
     border: 1px solid rgba(255,215,0,0.5);
     border-radius: 15px;
-    max-width: 650px;
+    max-width: 700px;
     margin: 20px auto;
     padding: 20px;
 }
@@ -97,15 +101,16 @@ a {
     <h1>LS GLOW BY SANDRA</h1>
     <h2>Prothésiste ongulaire</h2>
 
+    <!-- MENU CORRIGÉ -->
     <nav>
-        <a href="#">Accueil</a>
-        <a href="#">Prestations</a>
-        <a href="#">Tarifs</a>
-        <a href="#">Contact</a>
+        <a href="#presentation">Accueil</a>
+        <a href="#prestations">Prestations & Tarifs</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<section class="card">
+<!-- PRESENTATION -->
+<section id="presentation" class="card">
     <h3>Présentation</h3>
     <p>
         Bienvenue chez LS Glow by Sandra, prothésiste ongulaire spécialisée dans la mise en beauté des mains et des pieds.
@@ -113,40 +118,37 @@ a {
     </p>
 </section>
 
-<section class="card">
-    <h3>LES MAINS</h3>
+<!-- PRESTATIONS + TARIFS ENSEMBLE -->
+<section id="prestations" class="card">
+    <h3>Prestations & Tarifs</h3>
+
     <p>
+        <b>LES MAINS</b><br>
         Pose gel capsule : 40€<br>
         Pose américaine : 40€<br>
         Gainage : 35€<br>
         Remplissage gel : 30€<br>
-        Vernis semi-permanent : 20€
-    </p>
-</section>
+        Vernis semi-permanent : 20€<br><br>
 
-<section class="card">
-    <h3>LES PIEDS & DÉPOSE</h3>
-    <p>
+        <b>LES PIEDS & DÉPOSE</b><br>
         Semi-permanent pieds : 20€<br>
-        Dépose : 15€
-    </p>
-</section>
+        Dépose : 15€<br><br>
 
-<section class="card">
-    <h3>SUPPLÉMENTS / NAIL ART</h3>
-    <p>
+        <b>SUPPLÉMENTS / NAIL ART</b><br>
         Longueur standard : +0€<br>
         Longueur L : +5€<br>
         Longueur XL : +10€<br>
         Babyboomer : +8€<br>
         French : +8€<br>
-        Strass : +0,50€ par ongle<br>
-        Nail art : +3€ par ongle
+        Strass : +0,50€ / ongle<br>
+        Nail art : +3€ / ongle
     </p>
 </section>
 
-<section class="card">
+<!-- CONTACT -->
+<section id="contact" class="card">
     <h3>CONTACT</h3>
+
     <p>
         📞 06.31.22.09.52<br><br>
 
