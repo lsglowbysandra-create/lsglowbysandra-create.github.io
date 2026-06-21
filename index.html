@@ -12,16 +12,16 @@ body {
     color: #fff;
     text-align: center;
 
-    /* 💎 VRAI MARBRE CLAIR */
-    background: url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=80");
+    /* 💎 FOND MARBRÉ CLAIR */
+    background: url("https://images.unsplash.com/photo-1604076913837-52ab5629fba9?auto=format&fit=crop&w=1400&q=80");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* overlay léger (PAS NOIR) */
+/* voile léger pour lisibilité */
 .overlay {
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.25);
     min-height: 100vh;
     padding-bottom: 60px;
 }
@@ -40,13 +40,11 @@ header {
 h1 {
     margin: 10px 0 5px;
     color: gold;
-    letter-spacing: 2px;
 }
 
 h2 {
     margin: 0;
     color: #ffd89b;
-    font-weight: normal;
 }
 
 /* MENU */
@@ -65,25 +63,25 @@ nav a:hover {
     color: gold;
 }
 
-/* 💎 CARTES ULTRA LUXE */
+/* 💎 BLOC PRINCIPAL */
 .card {
-    max-width: 700px;
+    max-width: 750px;
     margin: 20px auto;
-    padding: 22px;
+    padding: 20px;
+}
 
-    /* transparent chic */
-    background: rgba(255,255,255,0.06);
-
-    border-radius: 18px;
-
-    /* OR + ORANGE */
-    border: 1px solid rgba(255, 215, 0, 0.7);
-    box-shadow: 0 0 18px rgba(255, 165, 0, 0.25);
+/* 💎 ENCARTS PRESTATIONS */
+.box {
+    background: rgba(0,0,0,0.35);
+    border: 1px solid gold;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 12px 0;
+    box-shadow: 0 0 12px rgba(255,165,0,0.2);
 }
 
 h3 {
     color: gold;
-    letter-spacing: 1px;
 }
 
 p {
@@ -115,29 +113,34 @@ a {
     </nav>
 </header>
 
+<!-- PRESENTATION -->
 <section id="presentation" class="card">
     <h3>Présentation</h3>
     <p>
-        Bienvenue chez LS Glow by Sandra, prothésiste ongulaire spécialisée dans la mise en beauté des mains et des pieds.
-        Travail soigné, élégant et personnalisé selon vos envies.
+        Bienvenue chez LS Glow by Sandra, prothésiste ongulaire spécialisée dans la beauté des mains et des pieds.
     </p>
 </section>
 
+<!-- PRESTATIONS -->
 <section id="prestations" class="card">
     <h3>Prestations & Tarifs</h3>
 
-    <p>
+    <div class="box">
         <b>LES MAINS</b><br>
         Pose gel capsule : 40€<br>
         Pose américaine : 40€<br>
         Gainage : 35€<br>
         Remplissage gel : 30€<br>
-        Vernis semi-permanent : 20€<br><br>
+        Vernis semi-permanent : 20€
+    </div>
 
+    <div class="box">
         <b>LES PIEDS & DÉPOSE</b><br>
         Semi-permanent pieds : 20€<br>
-        Dépose : 15€<br><br>
+        Dépose : 15€
+    </div>
 
+    <div class="box">
         <b>SUPPLÉMENTS / NAIL ART</b><br>
         Longueur standard : +0€<br>
         Longueur L : +5€<br>
@@ -146,9 +149,10 @@ a {
         French : +8€<br>
         Strass : +0,50€ / ongle<br>
         Nail art : +3€ / ongle
-    </p>
+    </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="card">
     <h3>CONTACT</h3>
 
@@ -171,4 +175,5 @@ a {
 </div>
 
 </body>
-</html>    
+</html>
+   
