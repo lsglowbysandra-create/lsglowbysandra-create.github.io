@@ -12,16 +12,16 @@ body {
     color: #fff;
     text-align: center;
 
-    /* 💎 FOND MARBRÉ CLAIR */
-    background: url("https://images.unsplash.com/photo-1604076913837-52ab5629fba9?auto=format&fit=crop&w=1400&q=80");
+    /* 💎 VRAI MARBRE BLANC CASSÉ */
+    background: url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* voile léger pour lisibilité */
+/* voile très léger (pour garder le marbre visible) */
 .overlay {
-    background: rgba(0,0,0,0.25);
+    background: rgba(255,255,255,0.08);
     min-height: 100vh;
     padding-bottom: 60px;
 }
@@ -39,12 +39,14 @@ header {
 
 h1 {
     margin: 10px 0 5px;
-    color: gold;
+    color: #d4af37; /* or */
+    letter-spacing: 2px;
 }
 
 h2 {
     margin: 0;
-    color: #ffd89b;
+    color: #c0c0c0; /* argent */
+    font-weight: normal;
 }
 
 /* MENU */
@@ -53,44 +55,50 @@ nav {
 }
 
 nav a {
-    color: #ffd89b;
+    color: #d4af37;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: gold;
+    color: #c0c0c0;
 }
 
-/* 💎 BLOC PRINCIPAL */
+/* CARTES BLANCHES LUXE */
 .card {
     max-width: 750px;
     margin: 20px auto;
     padding: 20px;
+
+    background: rgba(255,255,255,0.75);
+    border-radius: 18px;
+
+    border: 1px solid rgba(212,175,55,0.5);
+
+    box-shadow: 0 0 15px rgba(212,175,55,0.25);
 }
 
-/* 💎 ENCARTS PRESTATIONS */
+/* sous-encadrés prestations */
 .box {
-    background: rgba(0,0,0,0.35);
-    border: 1px solid gold;
-    border-radius: 15px;
-    padding: 15px;
-    margin: 12px 0;
-    box-shadow: 0 0 12px rgba(255,165,0,0.2);
+    background: rgba(255,255,255,0.9);
+    border: 1px solid rgba(192,192,192,0.6);
+    border-radius: 12px;
+    padding: 12px;
+    margin: 10px 0;
 }
 
 h3 {
-    color: gold;
+    color: #d4af37;
 }
 
 p {
-    color: #ffe7c2;
+    color: #333;
     line-height: 1.6;
 }
 
 a {
-    color: gold;
+    color: #d4af37;
     text-decoration: none;
 }
 </style>
@@ -113,16 +121,15 @@ a {
     </nav>
 </header>
 
-<!-- PRESENTATION -->
 <section id="presentation" class="card">
     <h3>Présentation</h3>
     <p>
-        Bienvenue chez LS Glow by Sandra, prothésiste ongulaire spécialisée dans la beauté des mains et des pieds.
+        Bienvenue chez LS Glow by Sandra, prothésiste ongulaire spécialisée dans la mise en beauté des mains et des pieds.
     </p>
 </section>
 
-<!-- PRESTATIONS -->
 <section id="prestations" class="card">
+
     <h3>Prestations & Tarifs</h3>
 
     <div class="box">
@@ -141,7 +148,7 @@ a {
     </div>
 
     <div class="box">
-        <b>SUPPLÉMENTS / NAIL ART</b><br>
+        <b>SUPPLÉMENTS</b><br>
         Longueur standard : +0€<br>
         Longueur L : +5€<br>
         Longueur XL : +10€<br>
@@ -150,10 +157,11 @@ a {
         Strass : +0,50€ / ongle<br>
         Nail art : +3€ / ongle
     </div>
+
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="card">
+
     <h3>CONTACT</h3>
 
     <p>
@@ -170,10 +178,10 @@ a {
             ls.glow.by.sandra@gmail.com
         </a>
     </p>
+
 </section>
 
 </div>
 
 </body>
 </html>
-   
