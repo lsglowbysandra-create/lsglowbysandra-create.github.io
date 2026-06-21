@@ -7,7 +7,6 @@
 
 <style>
 
-/* RESET */
 * {
     box-sizing: border-box;
 }
@@ -24,15 +23,16 @@ body {
     background-attachment: fixed;
 }
 
-/* OVERLAY */
+/* CONTENEUR */
 .overlay {
-    background: rgba(255,255,255,0.10);
     min-height: 100vh;
     padding: 30px 10px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background: rgba(255,255,255,0.08);
 }
 
 /* LOGO */
@@ -51,9 +51,10 @@ h1 {
     color: #d4af37;
 }
 
+/* 🔥 PROTHESISTE ONGULAIRE EN NOIR */
 h2 {
     margin: 0;
-    color: #c0c0c0;
+    color: black;
     font-weight: normal;
 }
 
@@ -69,47 +70,39 @@ nav a {
     font-weight: bold;
 }
 
-/* CARTES */
+/* 🟧 ENCARTS ORANGE DÉGRADÉ (TOUTES SECTIONS) */
 .card {
     max-width: 750px;
     width: 100%;
     margin: 20px auto;
     padding: 20px;
 
-    background: rgba(255,255,255,0.85);
-    border-radius: 15px;
-}
-
-/* 🟧 ENCADRÉS ORANGE DÉGRADÉ */
-.box {
     background: linear-gradient(135deg, #ffb347, #ff7f50);
-    border-radius: 12px;
-    padding: 18px;
-    margin: 12px 0;
+    border-radius: 18px;
 
     color: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* 🔠 TITRES PRESTATIONS */
-.box b {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-/* TITRES */
-h3 {
-    color: #d4af37;
+/* TITRES DANS CARTES */
+.card h3 {
+    color: white;
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 /* TEXTE */
-p {
-    color: #333;
+.card p {
+    color: white;
     line-height: 1.6;
+}
+
+/* BOX PRESTATIONS (même style que cartes) */
+.box {
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px 0;
 }
 
 /* BOUTON RDV */
@@ -117,16 +110,16 @@ p {
     display: inline-block;
     margin-top: 15px;
     padding: 12px 20px;
-    background: #d4af37;
-    color: white;
+    background: white;
+    color: #ff7f50;
     border-radius: 30px;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
 /* LIENS */
 a {
-    color: #d4af37;
+    color: white;
     text-decoration: none;
 }
 
@@ -178,7 +171,7 @@ a {
     <h3>Prestations & Tarifs</h3>
 
     <div class="box">
-        <b>LES MAINS</b>
+        <b>LES MAINS</b><br>
         Pose gel capsule : 40€<br>
         Pose américaine : 40€<br>
         Gainage : 35€<br>
@@ -187,13 +180,13 @@ a {
     </div>
 
     <div class="box">
-        <b>LES PIEDS & DÉPOSE</b>
+        <b>LES PIEDS & DÉPOSE</b><br>
         Semi-permanent pieds : 20€<br>
         Dépose : 15€
     </div>
 
     <div class="box">
-        <b>SUPPLÉMENTS</b>
+        <b>SUPPLÉMENTS</b><br>
         Longueur L : +5€<br>
         XL : +10€<br>
         Babyboomer : +8€<br>
