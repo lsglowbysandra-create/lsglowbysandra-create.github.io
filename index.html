@@ -10,19 +10,16 @@
 /* RESET */
 * { box-sizing: border-box; }
 
-/* FOND */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     text-align: center;
-
     background: url("marbre.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* OVERLAY */
 .overlay {
     min-height: 100vh;
     padding: 30px 10px;
@@ -67,6 +64,21 @@ nav a {
     color: white;
     border-radius: 30px;
     text-decoration: none;
+}
+
+/* 👉 PRESTATIONS */
+.box {
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px; /* 🔥 INTERLIGNE ENTRE BLOCS */
+    color: #000;
+}
+
+.box b {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 12px;
 }
 
 /* GALERIE */
@@ -140,7 +152,7 @@ nav a {
 
     <nav>
         <a href="#presentation">Accueil</a>
-        <a href="#prestations">Prestations</a>
+        <a href="#prestations">Prestations & Tarifs</a>
         <a href="#galerie">Galerie</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -149,13 +161,16 @@ nav a {
 <!-- PRESENTATION -->
 <section id="presentation" class="card">
 
-    <h3>Présentation</h3>
+    <h3>Bienvenue chez LS Glow by Sandra ✨</h3>
 
     <p>
-        Bienvenue chez LS Glow by Sandra ✨<br>
         Prothésiste ongulaire à domicile 💅<br><br>
 
-        Saint-Jean-de-Luz et alentours 🤍
+        Je me déplace à Saint-Jean-de-Luz et alentours pour des prestations soignées et personnalisées.<br><br>
+
+        Chaque personne est la bienvenue 🤍<br><br>
+
+        Service accessible, respectueux et adapté à toutes et tous, dans une ambiance simple et bienveillante.
     </p>
 
     <a class="btn" href="https://wa.me/33631220952">📲 Prendre RDV</a>
@@ -167,16 +182,30 @@ nav a {
 
     <h3>Prestations & Tarifs</h3>
 
-    <b>LES MAINS</b><br>
-    Gel capsule 40€<br>
-    Américaine 40€<br>
-    Gainage 35€<br>
-    Remplissage 30€<br>
-    Semi 20€<br><br>
+    <div class="box">
+        <b>LES MAINS</b>
+        Pose gel capsule : 40€<br>
+        Pose américaine : 40€<br>
+        Gainage : 35€<br>
+        Remplissage gel : 30€<br>
+        Vernis semi-permanent : 20€
+    </div>
 
-    <b>PIEDS & DÉPOSE</b><br>
-    Pieds 20€<br>
-    Dépose 15€
+    <div class="box">
+        <b>LES PIEDS & DÉPOSE</b>
+        Semi-permanent pieds : 20€<br>
+        Dépose : 15€
+    </div>
+
+    <div class="box">
+        <b>SUPPLÉMENTS</b>
+        Longueur L : +5€<br>
+        XL : +10€<br>
+        Babyboomer : +8€<br>
+        French : +8€<br>
+        Strass : +0,50€<br>
+        Nail art : +3€
+    </div>
 
 </section>
 
@@ -222,8 +251,7 @@ nav a {
     <h3>Contact</h3>
 
     📞 06.31.22.09.52<br><br>
-    💬 WhatsApp<br>
-    📸 Instagram @ls.glow.by.sandra<br><br>
+    📸 Instagram : @ls.glow.by.sandra<br><br>
     📧 ls.glow.by.sandra@gmail.com
 
 </section>
