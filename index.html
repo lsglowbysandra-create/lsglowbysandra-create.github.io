@@ -6,22 +6,23 @@
 <title>LS Glow by Sandra</title>
 
 <style>
+
+/* ===== FOND MARBRE (IMAGE 2) ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #fff;
     text-align: center;
+    color: #fff;
 
-    /* 💎 VRAI MARBRE BLANC CASSÉ */
     background: url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* voile très léger (pour garder le marbre visible) */
+/* voile léger luxe */
 .overlay {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.10);
     min-height: 100vh;
     padding-bottom: 60px;
 }
@@ -34,18 +35,17 @@ header {
 .logo {
     width: 140px;
     border-radius: 50%;
-    border: 2px solid gold;
+    border: 2px solid #d4af37;
 }
 
 h1 {
+    color: #d4af37;
     margin: 10px 0 5px;
-    color: #d4af37; /* or */
-    letter-spacing: 2px;
 }
 
 h2 {
+    color: #c0c0c0;
     margin: 0;
-    color: #c0c0c0; /* argent */
     font-weight: normal;
 }
 
@@ -65,27 +65,27 @@ nav a:hover {
     color: #c0c0c0;
 }
 
-/* CARTES BLANCHES LUXE */
+/* ===== CARTES BLANCHES LUXE ===== */
 .card {
     max-width: 750px;
     margin: 20px auto;
     padding: 20px;
 
-    background: rgba(255,255,255,0.75);
+    background: rgba(255,255,255,0.85);
     border-radius: 18px;
 
     border: 1px solid rgba(212,175,55,0.5);
-
-    box-shadow: 0 0 15px rgba(212,175,55,0.25);
 }
 
-/* sous-encadrés prestations */
+/* ===== ENCADRÉS PRESTATIONS ===== */
 .box {
-    background: rgba(255,255,255,0.9);
-    border: 1px solid rgba(192,192,192,0.6);
+    background: rgba(255,255,255,0.95);
+    border: 1px solid #d4af37;
     border-radius: 12px;
-    padding: 12px;
+    padding: 15px;
     margin: 10px 0;
+
+    color: #333;
 }
 
 h3 {
@@ -101,6 +101,7 @@ a {
     color: #d4af37;
     text-decoration: none;
 }
+
 </style>
 
 </head>
@@ -121,6 +122,7 @@ a {
     </nav>
 </header>
 
+<!-- PRESENTATION -->
 <section id="presentation" class="card">
     <h3>Présentation</h3>
     <p>
@@ -128,12 +130,13 @@ a {
     </p>
 </section>
 
+<!-- PRESTATIONS -->
 <section id="prestations" class="card">
 
     <h3>Prestations & Tarifs</h3>
 
     <div class="box">
-        <b>LES MAINS</b><br>
+        <b>LES MAINS</b><br><br>
         Pose gel capsule : 40€<br>
         Pose américaine : 40€<br>
         Gainage : 35€<br>
@@ -142,13 +145,13 @@ a {
     </div>
 
     <div class="box">
-        <b>LES PIEDS & DÉPOSE</b><br>
+        <b>LES PIEDS & DÉPOSE</b><br><br>
         Semi-permanent pieds : 20€<br>
         Dépose : 15€
     </div>
 
     <div class="box">
-        <b>SUPPLÉMENTS</b><br>
+        <b>SUPPLÉMENTS</b><br><br>
         Longueur standard : +0€<br>
         Longueur L : +5€<br>
         Longueur XL : +10€<br>
@@ -160,6 +163,7 @@ a {
 
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="card">
 
     <h3>CONTACT</h3>
