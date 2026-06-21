@@ -7,11 +7,12 @@
 
 <style>
 
+/* RESET */
 * {
     box-sizing: border-box;
 }
 
-/* FOND MARBRE */
+/* 💎 FOND MARBRE */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -23,7 +24,7 @@ body {
     background-attachment: fixed;
 }
 
-/* CONTENEUR */
+/* OVERLAY */
 .overlay {
     min-height: 100vh;
     padding: 30px 10px;
@@ -42,23 +43,23 @@ body {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #d4af37;
-    margin: 0 auto 10px auto;
+    margin-bottom: 10px;
 }
 
 /* TITRES */
 h1 {
     margin: 10px 0 5px;
     color: #d4af37;
+    letter-spacing: 2px;
 }
 
-/* 🔥 PROTHESISTE ONGULAIRE EN NOIR */
 h2 {
     margin: 0;
-    color: black;
+    color: #000;
     font-weight: normal;
 }
 
-/* MENU */
+/* NAV */
 nav {
     margin-top: 20px;
 }
@@ -70,39 +71,41 @@ nav a {
     font-weight: bold;
 }
 
-/* 🟧 ENCARTS ORANGE DÉGRADÉ (TOUTES SECTIONS) */
+/* 💎 CARTES LUXE DOUX */
 .card {
     max-width: 750px;
     width: 100%;
     margin: 20px auto;
     padding: 20px;
 
-    background: linear-gradient(135deg, #ffb347, #ff7f50);
-    border-radius: 18px;
+    background: rgba(255,255,255,0.82);
+    border-radius: 15px;
 
-    color: white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: 1px solid rgba(212,175,55,0.25);
 }
 
-/* TITRES DANS CARTES */
+/* TITRES SECTIONS */
 .card h3 {
-    color: white;
+    color: #d4af37;
     font-size: 22px;
     margin-bottom: 12px;
 }
 
 /* TEXTE */
 .card p {
-    color: white;
+    color: #333;
     line-height: 1.6;
 }
 
-/* BOX PRESTATIONS (même style que cartes) */
+/* BOX PRESTATIONS (TRÈS LÉGER) */
 .box {
-    background: rgba(255,255,255,0.15);
-    border-radius: 12px;
+    background: rgba(255,255,255,0.65);
+    border: 1px solid rgba(212,175,55,0.35);
+    border-radius: 10px;
     padding: 15px;
     margin: 10px 0;
+
+    color: #333;
 }
 
 /* BOUTON RDV */
@@ -110,16 +113,18 @@ nav a {
     display: inline-block;
     margin-top: 15px;
     padding: 12px 20px;
-    background: white;
-    color: #ff7f50;
+
+    background: #d4af37;
+    color: white;
     border-radius: 30px;
+
     font-weight: bold;
     text-decoration: none;
 }
 
 /* LIENS */
 a {
-    color: white;
+    color: #d4af37;
     text-decoration: none;
 }
 
