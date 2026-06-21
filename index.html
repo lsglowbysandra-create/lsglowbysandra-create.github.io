@@ -50,7 +50,6 @@ body {
 h1 {
     margin: 10px 0 5px;
     color: #d4af37;
-    letter-spacing: 2px;
 }
 
 h2 {
@@ -60,10 +59,6 @@ h2 {
 }
 
 /* NAV */
-nav {
-    margin-top: 20px;
-}
-
 nav a {
     color: #d4af37;
     margin: 0 10px;
@@ -71,41 +66,48 @@ nav a {
     font-weight: bold;
 }
 
-/* 💎 CARTES LUXE DOUX */
+/* 💎 ENCARTS OR */
 .card {
     max-width: 750px;
     width: 100%;
     margin: 20px auto;
     padding: 20px;
 
-    background: rgba(255,255,255,0.82);
+    background: linear-gradient(135deg, #d4af37, #f5d07a);
     border-radius: 15px;
 
-    border: 1px solid rgba(212,175,55,0.25);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* TITRES SECTIONS */
+/* TITRES DANS CARTES */
 .card h3 {
-    color: #d4af37;
+    color: white;
     font-size: 22px;
     margin-bottom: 12px;
 }
 
 /* TEXTE */
 .card p {
-    color: #333;
+    color: white;
     line-height: 1.6;
 }
 
-/* BOX PRESTATIONS (TRÈS LÉGER) */
+/* 💎 PRESTATIONS BOX */
 .box {
-    background: rgba(255,255,255,0.65);
-    border: 1px solid rgba(212,175,55,0.35);
-    border-radius: 10px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
     padding: 15px;
     margin: 10px 0;
 
-    color: #333;
+    color: white;
+}
+
+/* 🔥 TITRES PRESTATIONS PLUS GRANDS + ESPACE */
+.box b {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 12px; /* interligne demandé */
 }
 
 /* BOUTON RDV */
@@ -114,8 +116,8 @@ nav a {
     margin-top: 15px;
     padding: 12px 20px;
 
-    background: #d4af37;
-    color: white;
+    background: white;
+    color: #d4af37;
     border-radius: 30px;
 
     font-weight: bold;
@@ -124,7 +126,7 @@ nav a {
 
 /* LIENS */
 a {
-    color: #d4af37;
+    color: white;
     text-decoration: none;
 }
 
@@ -176,7 +178,7 @@ a {
     <h3>Prestations & Tarifs</h3>
 
     <div class="box">
-        <b>LES MAINS</b><br>
+        <b>LES MAINS</b>
         Pose gel capsule : 40€<br>
         Pose américaine : 40€<br>
         Gainage : 35€<br>
@@ -185,13 +187,13 @@ a {
     </div>
 
     <div class="box">
-        <b>LES PIEDS & DÉPOSE</b><br>
+        <b>LES PIEDS & DÉPOSE</b>
         Semi-permanent pieds : 20€<br>
         Dépose : 15€
     </div>
 
     <div class="box">
-        <b>SUPPLÉMENTS</b><br>
+        <b>SUPPLÉMENTS</b>
         Longueur L : +5€<br>
         XL : +10€<br>
         Babyboomer : +8€<br>
