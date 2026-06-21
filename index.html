@@ -7,158 +7,222 @@
 <title>LS Glow by Sandra</title>
 
 <style>
-* {
-    box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-body {
-    margin: 0;
-    font-family: "Georgia", serif;
-    color: #6b4a1f;
-    background: linear-gradient(180deg, #fbe7c6 0%, #f7c98a 50%, #e79a41 100%);
+html{
+  scroll-behavior:smooth;
 }
 
-header {
-    text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #f9e8c7, #f4c67c, #e89d43);
+body{
+  font-family: Georgia, serif;
+  color:#5c3a17;
+  background:linear-gradient(180deg,#f8e3bf 0%,#f8c984 50%,#e59a38 100%);
 }
 
-.logo {
-    width: 180px;
-    max-width: 100%;
+/* HEADER */
+
+header{
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.6), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(255,255,255,0.2), transparent 30%),
+    linear-gradient(135deg,#f8e7c4,#f6c06f,#e99a3d);
+  border-bottom:2px solid rgba(205,150,50,0.5);
+  text-align:center;
+  padding:40px 20px;
 }
 
-h1 {
-    margin: 20px 0 10px;
-    font-size: 48px;
-    font-weight: normal;
+.logo{
+  width:180px;
+  max-width:100%;
+  margin-bottom:15px;
 }
 
-.sous-titre {
-    font-size: 28px;
-    font-style: italic;
-    margin-bottom: 20px;
+header h1{
+  font-size:3rem;
+  font-weight:normal;
+  margin-bottom:10px;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 20px;
+header p{
+  font-size:2rem;
+  font-style:italic;
 }
 
-nav a {
-    text-decoration: none;
-    color: #8a5a10;
-    background: #fff4df;
-    padding: 12px 25px;
-    border-radius: 30px;
-    border: 2px solid #d8a13d;
-    font-weight: bold;
-    transition: 0.3s;
+.heart{
+  font-size:2rem;
+  color:#d7a130;
+  margin-top:10px;
 }
 
-nav a:hover {
-    background: #d8a13d;
-    color: white;
+/* MENU */
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  padding:20px;
 }
 
-section {
-    max-width: 1200px;
-    margin: 25px auto;
-    padding: 30px;
+nav a{
+  text-decoration:none;
+  color:#7a511e;
+  background:#f8ebd0;
+  border:1px solid #d8a13d;
+  border-radius:30px;
+  padding:14px 28px;
+  min-width:160px;
+  text-align:center;
+  font-weight:bold;
+  transition:0.3s;
 }
 
-.bloc {
-    background: rgba(255,255,255,0.75);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(216,161,61,0.4);
-    border-radius: 25px;
-    padding: 30px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+nav a:hover{
+  background:#d8a13d;
+  color:white;
 }
 
-.accueil {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    flex-wrap: wrap;
+/* BLOCS */
+
+.container{
+  max-width:1300px;
+  margin:auto;
+  padding:20px;
 }
 
-.texte {
-    flex: 1;
-    min-width: 280px;
+.bloc{
+  background:rgba(255,248,235,0.85);
+  border:1px solid rgba(216,161,61,0.5);
+  border-radius:30px;
+  padding:35px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  backdrop-filter:blur(6px);
+  margin-bottom:25px;
 }
 
-.texte h2 {
-    margin-top: 0;
-    font-size: 36px;
+/* ACCUEIL */
+
+.accueil{
+  display:flex;
+  gap:30px;
+  align-items:center;
+  flex-wrap:wrap;
 }
 
-.image {
-    flex: 1;
-    min-width: 280px;
-    text-align: center;
+.texte{
+  flex:1;
+  min-width:300px;
 }
 
-.image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 20px;
+.texte h2{
+  font-size:2.5rem;
+  margin-bottom:20px;
 }
 
-.cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+.texte p{
+  line-height:1.8;
+  margin-bottom:15px;
+  font-size:1.15rem;
 }
 
-.card {
-    flex: 1;
-    min-width: 280px;
-    background: rgba(255,255,255,0.8);
-    border-radius: 25px;
-    padding: 25px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+.photo{
+  flex:1;
+  min-width:300px;
+  text-align:center;
 }
 
-.card h3 {
-    text-align: center;
-    color: #a66a14;
+.photo img{
+  width:100%;
+  max-width:400px;
+  border-radius:25px;
+  border:2px solid rgba(216,161,61,0.4);
 }
 
-.card p {
-    line-height: 2;
+/* CARTES */
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
 }
 
-.prix {
-    float: right;
-    font-weight: bold;
+.card{
+  background:rgba(255,248,235,0.88);
+  border:1px solid rgba(216,161,61,0.5);
+  border-radius:25px;
+  padding:25px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
-.contact {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+.card h3{
+  text-align:center;
+  margin-bottom:20px;
+  color:#a56a18;
 }
 
-.contact a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background: linear-gradient(90deg, #d8a13d, #c6851c);
-    padding: 15px 25px;
-    border-radius: 30px;
-    font-weight: bold;
+.ligne{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:12px;
 }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    color: white;
+.prix{
+  font-weight:bold;
+  color:#c37d18;
+}
+
+/* CONTACT */
+
+.contact{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  text-align:center;
+}
+
+.contact-card{
+  padding:20px;
+}
+
+.contact-card h4{
+  margin-bottom:15px;
+}
+
+.contact a{
+  display:inline-block;
+  margin-top:15px;
+  text-decoration:none;
+  background:linear-gradient(90deg,#d8a13d,#c7841e);
+  color:white;
+  padding:12px 24px;
+  border-radius:30px;
+  font-weight:bold;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:white;
+}
+
+@media (max-width:768px){
+
+  header h1{
+    font-size:2.2rem;
+  }
+
+  header p{
+    font-size:1.5rem;
+  }
+
+  .texte h2{
+    font-size:2rem;
+  }
 }
 </style>
 
@@ -168,131 +232,121 @@ footer {
 
 <header>
 
-    <img src="logo.jpg" alt="Logo LS Glow by Sandra" class="logo">
+  <img src="logo.jpg" alt="Logo LS Glow by Sandra" class="logo">
 
-    <h1>LS GLOW BY SANDRA</h1>
+  <h1>LS GLOW BY SANDRA</h1>
 
-    <div class="sous-titre">Prothésiste ongulaire</div>
+  <p>Prothésiste Ongulaire</p>
+
+  <div class="heart">💛</div>
 
 </header>
 
 <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#prestations">Prestations</a>
-    <a href="#contact">Contact</a>
+  <a href="#accueil">ACCUEIL</a>
+  <a href="#prestations">PRESTATIONS</a>
+  <a href="#contact">CONTACT</a>
 </nav>
 
-<section id="accueil">
+<div class="container">
 
-    <div class="bloc accueil">
+  <section id="accueil" class="bloc accueil">
 
-        <div class="texte">
+    <div class="texte">
 
-            <h2>Bienvenue chez LS Glow by Sandra ✨</h2>
+      <h2>Bienvenue chez LS Glow by Sandra ✨</h2>
 
-            <p>
-                Prothésiste ongulaire à domicile 💅
-            </p>
+      <p>Prothésiste ongulaire à domicile 💅</p>
 
-            <p>
-                Je travaille principalement à domicile et me déplace également sur Saint-Jean-de-Luz et ses alentours.
-            </p>
+      <p>Je travaille principalement à domicile et me déplace également sur Saint-Jean-de-Luz et ses alentours.</p>
 
-            <p>
-                Je propose des prestations personnalisées, réalisées avec soin, dans une ambiance chaleureuse, professionnelle et bienveillante.
-            </p>
+      <p>Je propose des prestations personnalisées, réalisées avec soin, dans une ambiance chaleureuse, professionnelle et bienveillante.</p>
 
-            <p>
-                Toutes les personnes sont les bienvenues 🤍
-            </p>
-
-        </div>
-
-        <div class="image">
-            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800" alt="Ongles élégants">
-        </div>
+      <p>Toutes les personnes sont les bienvenues 🤍</p>
 
     </div>
 
-</section>
+    <div class="photo">
+      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80" alt="Ongles élégants">
+    </div>
 
-<section id="prestations">
+  </section>
+
+  <section id="prestations">
 
     <div class="cards">
 
-        <div class="card">
+      <div class="card">
 
-            <h3>💅 Mains</h3>
+        <h3>💅 PRESTATIONS MAINS</h3>
 
-            <p>
-                Pose gel capsule <span class="prix">40€</span><br>
-                Pose américaine <span class="prix">40€</span><br>
-                Gainage <span class="prix">35€</span><br>
-                Remplissage gel <span class="prix">30€</span><br>
-                Vernis semi-permanent <span class="prix">20€</span>
-            </p>
+        <div class="ligne"><span>Pose gel capsule</span><span class="prix">40€</span></div>
+        <div class="ligne"><span>Pose américaine</span><span class="prix">40€</span></div>
+        <div class="ligne"><span>Gainage</span><span class="prix">35€</span></div>
+        <div class="ligne"><span>Remplissage gel</span><span class="prix">30€</span></div>
+        <div class="ligne"><span>Vernis semi-permanent</span><span class="prix">20€</span></div>
 
-        </div>
+      </div>
 
-        <div class="card">
+      <div class="card">
 
-            <h3>🦶 Pieds & Dépose</h3>
+        <h3>🦶 PIEDS & DÉPOSE</h3>
 
-            <p>
-                Semi-permanent pieds <span class="prix">20€</span><br>
-                Dépose <span class="prix">15€</span>
-            </p>
+        <div class="ligne"><span>Semi-permanent pieds</span><span class="prix">20€</span></div>
+        <div class="ligne"><span>Dépose</span><span class="prix">15€</span></div>
 
-        </div>
+      </div>
 
-        <div class="card">
+      <div class="card">
 
-            <h3>💛 Nail Art & Suppléments</h3>
+        <h3>💛 NAIL ART & SUPPLÉMENTS</h3>
 
-            <p>
-                Longueur standard <span class="prix">0€</span><br>
-                Longueur longue <span class="prix">+5€</span><br>
-                Longueur XL <span class="prix">+10€</span><br>
-                Babyboomer <span class="prix">+8€</span><br>
-                French <span class="prix">+8€</span><br>
-                Strass <span class="prix">0,50€ / doigt</span><br>
-                Nail art <span class="prix">+3€ / doigt</span>
-            </p>
+        <div class="ligne"><span>Longueur standard</span><span class="prix">0€</span></div>
+        <div class="ligne"><span>Longueur longue</span><span class="prix">+5€</span></div>
+        <div class="ligne"><span>Longueur XL</span><span class="prix">+10€</span></div>
+        <div class="ligne"><span>Babyboomer</span><span class="prix">+8€</span></div>
+        <div class="ligne"><span>French</span><span class="prix">+8€</span></div>
+        <div class="ligne"><span>Strass</span><span class="prix">0,50€ / doigt</span></div>
+        <div class="ligne"><span>Nail art</span><span class="prix">+3€ / doigt</span></div>
 
-        </div>
+      </div>
 
     </div>
 
-</section>
+  </section>
 
-<section id="contact">
+  <section id="contact" class="bloc">
 
-    <div class="bloc">
+    <h2 style="text-align:center; margin-bottom:30px;">📞 CONTACT</h2>
 
-        <h2 style="text-align:center;">📞 Contact</h2>
+    <div class="contact">
 
-        <div class="contact">
+      <div class="contact-card">
+        <h4>📞 Téléphone</h4>
+        <p>06 31 22 09 52</p>
+        <a href="tel:+33631220952">APPELER</a>
+      </div>
 
-            <a href="tel:+33631220952">
-                📞 06 31 22 09 52
-            </a>
+      <div class="contact-card">
+        <h4>💬 WhatsApp</h4>
+        <p>Discuter sur WhatsApp</p>
+        <a href="https://wa.me/33631220952" target="_blank">WHATSAPP</a>
+      </div>
 
-            <a href="https://wa.me/33631220952" target="_blank">
-                💬 WhatsApp
-            </a>
-
-            <a href="https://www.instagram.com/ls.glow.by.sandra" target="_blank">
-                📷 Instagram
-            </a>
-
-        </div>
+      <div class="contact-card">
+        <h4>📷 Instagram</h4>
+        <p>@ls.glow.by.sandra</p>
+        <a href="https://www.instagram.com/ls.glow.by.sandra" target="_blank">INSTAGRAM</a>
+      </div>
 
     </div>
 
-</section>
+  </section>
+
+</div>
 
 <footer>
-    © LS Glow by Sandra – Tous droits réservés
+  © LS GLOW BY SANDRA – Tous droits réservés
 </footer>
 
 </body>
