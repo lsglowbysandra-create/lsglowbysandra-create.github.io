@@ -9,19 +9,27 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #111, #3a2a12);
-    color: white;
+    color: #fff;
     text-align: center;
+
+    /* fond marbre */
+    background: url("https://images.unsplash.com/photo-1616627981047-84b1f0c6c1b2?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-/* HEADER */
+.overlay {
+    background: linear-gradient(135deg, rgba(0,0,0,0.75), rgba(90,60,10,0.7));
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
 header {
     padding: 30px 20px;
 }
 
 .logo {
     width: 140px;
-    height: auto;
     border-radius: 50%;
     border: 2px solid gold;
 }
@@ -29,22 +37,21 @@ header {
 h1 {
     margin: 10px 0 5px;
     color: gold;
+    letter-spacing: 2px;
 }
 
 h2 {
     margin: 0;
     font-weight: normal;
-    font-size: 16px;
-    color: #ddd;
+    color: #f5d08a;
 }
 
-/* MENU */
 nav {
     margin-top: 20px;
 }
 
 nav a {
-    color: white;
+    color: #f5d08a;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
@@ -54,29 +61,36 @@ nav a:hover {
     color: gold;
 }
 
-/* SECTIONS */
-section {
-    padding: 40px 20px;
-}
-
+/* CARTES */
 .card {
-    background: rgba(255,255,255,0.08);
+    background: linear-gradient(135deg, rgba(255,165,0,0.15), rgba(255,215,0,0.1));
+    border: 1px solid rgba(255,215,0,0.5);
+    border-radius: 15px;
+    max-width: 650px;
     margin: 20px auto;
     padding: 20px;
-    max-width: 600px;
-    border-radius: 15px;
-    border: 1px solid rgba(255,215,0,0.4);
 }
 
-.gold {
+h3 {
     color: gold;
 }
 
+p {
+    color: #f7e6c4;
+    line-height: 1.6;
+}
+
+a {
+    color: gold;
+    text-decoration: none;
+}
 </style>
 
 </head>
 
 <body>
+
+<div class="overlay">
 
 <header>
     <img src="logo.jpeg" class="logo">
@@ -91,22 +105,65 @@ section {
     </nav>
 </header>
 
-<section>
-    <div class="card">
-        <h3 class="gold">Bienvenue</h3>
-        <p>Bienvenue sur mon site de prothésie ongulaire. Pose d’ongles, gel, nail art et plus.</p>
-    </div>
-
-    <div class="card">
-        <h3 class="gold">Prestations</h3>
-        <p>Gainage, gel, capsules américaines, remplissage, nail art personnalisé.</p>
-    </div>
-
-    <div class="card">
-        <h3 class="gold">Tarifs</h3>
-        <p>À partir de 30€ selon prestation.</p>
-    </div>
+<section class="card">
+    <h3>Présentation</h3>
+    <p>
+        Bienvenue chez LS Glow by Sandra, prothésiste ongulaire spécialisée dans la mise en beauté des mains et des pieds.
+        Travail soigné, élégant et personnalisé selon vos envies.
+    </p>
 </section>
+
+<section class="card">
+    <h3>LES MAINS</h3>
+    <p>
+        Pose gel capsule : 40€<br>
+        Pose américaine : 40€<br>
+        Gainage : 35€<br>
+        Remplissage gel : 30€<br>
+        Vernis semi-permanent : 20€
+    </p>
+</section>
+
+<section class="card">
+    <h3>LES PIEDS & DÉPOSE</h3>
+    <p>
+        Semi-permanent pieds : 20€<br>
+        Dépose : 15€
+    </p>
+</section>
+
+<section class="card">
+    <h3>SUPPLÉMENTS / NAIL ART</h3>
+    <p>
+        Longueur standard : +0€<br>
+        Longueur L : +5€<br>
+        Longueur XL : +10€<br>
+        Babyboomer : +8€<br>
+        French : +8€<br>
+        Strass : +0,50€ par ongle<br>
+        Nail art : +3€ par ongle
+    </p>
+</section>
+
+<section class="card">
+    <h3>CONTACT</h3>
+    <p>
+        📞 06.31.22.09.52<br><br>
+
+        💬 WhatsApp : 
+        <a href="https://wa.me/33631220952">Envoyer un message</a><br><br>
+
+        📸 Instagram : 
+        <a href="https://instagram.com/ls.glow.by.sandra">@ls.glow.by.sandra</a><br><br>
+
+        📧 Email : 
+        <a href="mailto:ls.glow.by.sandra@gmail.com">
+            ls.glow.by.sandra@gmail.com
+        </a>
+    </p>
+</section>
+
+</div>
 
 </body>
 </html>
