@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -68,29 +68,6 @@ nav a {
     text-decoration: none;
 }
 
-.box {
-    background: rgba(255,255,255,0.6);
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-/* GALERIE */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.gallery img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid #d4af37;
-}
-
 /* BOUTIQUE */
 .shop {
     display: flex;
@@ -104,9 +81,8 @@ nav a {
     border-radius: 12px;
 }
 
-.product img {
-    width: 100%;
-    border-radius: 10px;
+.product h4 {
+    margin-top: 10px;
 }
 
 .price {
@@ -115,6 +91,19 @@ nav a {
     color: #d4af37;
 }
 
+/* 2 PHOTOS */
+.double-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.double-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* PAYPAL */
 .paypal-btn {
     display: inline-block;
     margin-top: 10px;
@@ -123,6 +112,21 @@ nav a {
     color: white;
     border-radius: 20px;
     text-decoration: none;
+}
+
+.box {
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 </style>
@@ -154,7 +158,7 @@ nav a {
     <p>
         Prothésiste ongulaire 💅<br>
         Saint-Jean-de-Luz et alentours<br>
-        Prestations personnalisées et soignées 🤍
+        Press On Nails faits main 🤍
     </p>
 
     <a class="btn" href="https://wa.me/33631220952">📲 Prendre RDV</a>
@@ -167,11 +171,9 @@ nav a {
     <h3>Prestations & Tarifs</h3>
 
     <div class="box">
-        <b>LES MAINS</b>
         Pose gel capsule : 40€<br>
         Pose américaine : 40€<br>
         Gainage : 35€<br>
-        Remplissage : 30€<br>
         Semi-permanent : 20€
     </div>
 
@@ -184,8 +186,14 @@ nav a {
 
     <div class="shop">
 
+        <!-- PRODUIT 1 -->
         <div class="product">
-            <img src="presson1.jpg">
+
+            <div class="double-img">
+                <img src="presson1a.jpg">
+                <img src="presson1b.jpg">
+            </div>
+
             <h4>Luxury Nude</h4>
             <p class="price">10 €</p>
             <p>Fait à la main • Réutilisable • Kit inclus</p>
@@ -193,10 +201,17 @@ nav a {
             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
                 💳 Acheter
             </a>
+
         </div>
 
+        <!-- PRODUIT 2 -->
         <div class="product">
-            <img src="presson2.jpg">
+
+            <div class="double-img">
+                <img src="presson2a.jpg">
+                <img src="presson2b.jpg">
+            </div>
+
             <h4>French Glam</h4>
             <p class="price">10 €</p>
             <p>Fait à la main • Réutilisable • Kit inclus</p>
@@ -204,10 +219,17 @@ nav a {
             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
                 💳 Acheter
             </a>
+
         </div>
 
+        <!-- PRODUIT 3 -->
         <div class="product">
-            <img src="presson3.jpg">
+
+            <div class="double-img">
+                <img src="presson3a.jpg">
+                <img src="presson3b.jpg">
+            </div>
+
             <h4>Gold Princess</h4>
             <p class="price">10 €</p>
             <p>Fait à la main • Réutilisable • Kit inclus</p>
@@ -215,12 +237,13 @@ nav a {
             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
                 💳 Acheter
             </a>
+
         </div>
 
     </div>
 
     <p style="margin-top:15px;">
-        🚚 Livraison : 3,90 € (France)
+        🚚 Livraison : 3,90 €
     </p>
 
 </section>
@@ -235,8 +258,6 @@ nav a {
         <img src="photo2.jpg">
         <img src="photo3.jpg">
         <img src="photo4.jpg">
-        <img src="photo5.jpg">
-        <img src="photo6.jpg">
     </div>
 
 </section>
