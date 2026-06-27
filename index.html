@@ -7,7 +7,9 @@
 
 <style>
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -76,7 +78,7 @@ nav a {
     border-radius: 12px;
 }
 
-/* 2 PHOTOS CÔTE À CÔTE */
+/* PHOTOS CÔTE À CÔTE (FIX ULTRA IMPORTANT) */
 .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -108,6 +110,7 @@ nav a {
     text-decoration: none;
 }
 
+/* BUTTON ACCUEIL */
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -128,7 +131,7 @@ nav a {
 <header>
     <img src="logo.jpeg" class="logo">
     <h1>LS GLOW BY SANDRA</h1>
-    <h2>Press On Nails faits main 💅</h2>
+    <h2>Press On Nails 💅</h2>
 </header>
 
 <nav>
@@ -143,10 +146,12 @@ nav a {
     <h3>Bienvenue ✨</h3>
 
     <p>
-        Press On Nails faits main, réutilisables 💅<br>
-        Commande simple et rapide<br>
-        Livraison disponible 🚚
+        Press On Nails faits main 💅<br>
+        Réutilisables • Finition pro • 10€<br>
+        Livraison possible 🚚
     </p>
+
+    <a class="btn" href="https://wa.me/33631220952">📲 Commander</a>
 
 </section>
 
@@ -160,12 +165,12 @@ nav a {
         <!-- PRODUIT 1 -->
         <div class="product">
 
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-  <img src="pressonnail1a.jpg">
-  <img src="pressonnail1b.jpg">
-</div>
+            <div class="images">
+                <img src="pressonnail1a.jpg">
+                <img src="pressonnail1b.jpg">
+            </div>
 
-            <h4>Luxury Nude</h4>
+            <h4>Modèle 1</h4>
             <p class="price">10 €</p>
 
             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
@@ -182,24 +187,7 @@ nav a {
                 <img src="pressonnail2b.jpg">
             </div>
 
-            <h4>French Glam</h4>
-            <p class="price">10 €</p>
-
-            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-                Payer avec PayPal
-            </a>
-
-        </div>
-
-        <!-- PRODUIT 3 -->
-        <div class="product">
-
-            <div class="images">
-                <img src="pressonnail3a.jpg">
-                <img src="pressonnail3b.jpg">
-            </div>
-
-            <h4>Gold Princess</h4>
+            <h4>Modèle 2</h4>
             <p class="price">10 €</p>
 
             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
