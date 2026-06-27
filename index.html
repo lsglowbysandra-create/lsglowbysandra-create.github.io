@@ -3,238 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LS Glow by Sandra</title>
+<title>LS Glow by Sandra - Boutique</title>
 
 <style>
-
-* { box-sizing: border-box; }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    text-align: center;
-    background: url("marbre.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: #f7f7f7;
 }
 
-.overlay {
-    min-height: 100vh;
-    padding: 30px 10px;
-}
-
-.logo {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid #d4af37;
-}
-
-h1 { color: #d4af37; }
-h2 { color: #000; font-weight: normal; }
-
-nav {
-    position: sticky;
-    top: 0;
-    background: rgba(245, 230, 200, 0.95);
-    padding: 10px;
-    z-index: 1000;
-}
-
-nav a {
-    margin: 0 10px;
-    color: #d4af37;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.card {
-    max-width: 750px;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(245, 230, 200, 0.92);
-    border-radius: 15px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 20px;
-    background: #d4af37;
+/* HEADER */
+header {
+    background: #000;
     color: white;
-    border-radius: 30px;
-    text-decoration: none;
-}
-
-/* BOUTIQUE */
-.shop {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.product {
-    background: rgba(255,255,255,0.7);
     padding: 15px;
-    border-radius: 12px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* BOUTIQUE GRID */
+.shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* PRODUIT STYLE COMMERCIAL */
+.product {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .product img {
     width: 100%;
-    border-radius: 10px;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* TEXT */
+.product h4 {
+    margin: 10px;
+    font-size: 14px;
 }
 
 .price {
-    font-size: 18px;
+    margin: 0 10px;
     font-weight: bold;
-    color: #d4af37;
+    color: #e60023;
 }
 
-/* PAYPAL */
-.paypal-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #0070ba;
+/* BOUTON ACHAT (IMPORTANT) */
+.buy-btn {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background: #e60023;
     color: white;
-    border-radius: 20px;
     text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
-.box {
-    background: rgba(255,255,255,0.6);
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.gallery img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
+/* TOP BAR */
+.top {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="overlay">
-
 <header>
-    <img src="logo.jpeg" class="logo">
-    <h1>LS GLOW BY SANDRA</h1>
-    <h2>Prothésiste ongulaire</h2>
+    <h1>LS GLOW BY SANDRA 💅</h1>
 </header>
 
-<nav>
-    <a href="#presentation">Accueil</a>
-    <a href="#prestations">Prestations</a>
-    <a href="#boutique">Boutique</a>
-    <a href="#galerie">Galerie</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<!-- PRESENTATION -->
-<section id="presentation" class="card">
-
-    <h3>Bienvenue chez LS Glow by Sandra ✨</h3>
-
-    <p>
-        Prothésiste ongulaire 💅<br>
-        Saint-Jean-de-Luz et alentours<br>
-        Press On Nails faits main 🤍
-    </p>
-
-    <a class="btn" href="https://wa.me/33631220952">📲 Prendre RDV</a>
-
-</section>
-
-<!-- PRESTATIONS -->
-<section id="prestations" class="card">
-
-    <h3>Prestations & Tarifs</h3>
-
-    <div class="box">
-        Pose gel capsule : 40€<br>
-        Pose américaine : 40€<br>
-        Gainage : 35€<br>
-        Semi-permanent : 20€
-    </div>
-
-</section>
+<div class="top">
+    Press On Nails faits main - 10€ 💖
+</div>
 
 <!-- 🛍️ BOUTIQUE -->
-<section id="boutique" class="card">
+<div class="shop">
 
-    <h3>Boutique Press On Nails 💅</h3>
-
-    <div class="shop">
-
-        <!-- PRODUIT 1 -->
-        <div class="product">
-
-            <img src="pressonnail1.jpg">
-
-            <h4>Luxury Nude</h4>
-            <p class="price">10 €</p>
-            <p>Fait à la main • Réutilisable • Kit inclus</p>
-
-            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-                💳 Acheter
-            </a>
-
-        </div>
-
-        <!-- PRODUIT 2 -->
-        <div class="product">
-
-            <img src="pressonnail2.jpg">
-
-            <h4>French Glam</h4>
-            <p class="price">10 €</p>
-            <p>Fait à la main • Réutilisable • Kit inclus</p>
-
-            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-                💳 Acheter
-            </a>
-
-        </div>
-
+    <!-- PRODUIT 1 -->
+    <div class="product">
+        <img src="pressonnail1.jpg">
+        <h4>Luxury Nude</h4>
+        <p class="price">10 €</p>
+        <a class="buy-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
+            ACHETER
+        </a>
     </div>
 
-    <p style="margin-top:15px;">
-        🚚 Livraison : 3,90 €
-    </p>
-
-</section>
-
-<!-- GALERIE -->
-<section id="galerie" class="card">
-
-    <h3>Galerie</h3>
-
-    <div class="gallery">
-        <img src="photo1.jpg">
-        <img src="photo2.jpg">
+    <!-- PRODUIT 2 -->
+    <div class="product">
+        <img src="pressonnail2.jpg">
+        <h4>French Glam</h4>
+        <p class="price">10 €</p>
+        <a class="buy-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
+            ACHETER
+        </a>
     </div>
-
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="card">
-
-    <h3>Contact</h3>
-
-    <p>📞 06.31.22.09.52</p>
-    <p>📧 ls.glow.by.sandra@gmail.com</p>
-    <p>📸 Instagram : ls.glow.by.sandra</p>
-
-</section>
 
 </div>
 
