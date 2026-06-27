@@ -3,120 +3,208 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LS Glow by Sandra - Boutique</title>
+<title>LS Glow by Sandra</title>
 
 <style>
+
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f7f7f7;
-}
-
-/* HEADER */
-header {
-    background: #000;
-    color: white;
-    padding: 15px;
     text-align: center;
+    background: url("marbre.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 22px;
+.overlay {
+    min-height: 100vh;
+    padding: 30px 10px;
 }
 
-/* BOUTIQUE GRID */
+/* LOGO */
+.logo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #d4af37;
+}
+
+/* TITRES */
+h1 { color: #d4af37; }
+h2 { color: #000; font-weight: normal; }
+
+/* NAV */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(245, 230, 200, 0.95);
+    padding: 10px;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CARD */
+.card {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(245, 230, 200, 0.92);
+    border-radius: 15px;
+}
+
+/* BOUTIQUE */
 .shop {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* PRODUIT */
+.product {
+    background: rgba(255,255,255,0.7);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* 2 PHOTOS ENSEMBLE */
+.images {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 10px;
+    gap: 5px;
 }
 
-/* PRODUIT STYLE COMMERCIAL */
-.product {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.product img {
+.images img {
     width: 100%;
     height: 160px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-/* TEXT */
-.product h4 {
-    margin: 10px;
-    font-size: 14px;
-}
-
+/* PRIX */
 .price {
-    margin: 0 10px;
+    font-size: 18px;
     font-weight: bold;
-    color: #e60023;
+    color: #d4af37;
 }
 
-/* BOUTON ACHAT (IMPORTANT) */
-.buy-btn {
-    display: block;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    background: #e60023;
+/* BOUTON PAYPAL */
+.paypal-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #0070ba;
     color: white;
+    border-radius: 20px;
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
 }
 
-/* TOP BAR */
-.top {
-    background: #fff;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #d4af37;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
 }
 
 </style>
-
 </head>
 
 <body>
 
+<div class="overlay">
+
 <header>
-    <h1>LS GLOW BY SANDRA 💅</h1>
+    <img src="logo.jpeg" class="logo">
+    <h1>LS GLOW BY SANDRA</h1>
+    <h2>Prothésiste ongulaire</h2>
 </header>
 
-<div class="top">
-    Press On Nails faits main - 10€ 💖
-</div>
+<nav>
+    <a href="#presentation">Accueil</a>
+    <a href="#boutique">Boutique</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- PRESENTATION -->
+<section id="presentation" class="card">
+
+    <h3>Bienvenue chez LS Glow by Sandra ✨</h3>
+
+    <p>
+        Press On Nails faits main 💅<br>
+        Saint-Jean-de-Luz et alentours<br>
+        Commande simple et rapide 🤍
+    </p>
+
+</section>
 
 <!-- 🛍️ BOUTIQUE -->
-<div class="shop">
+<section id="boutique" class="card">
 
-    <!-- PRODUIT 1 -->
-    <div class="product">
-        <img src="pressonnail1.jpg">
-        <h4>Luxury Nude</h4>
-        <p class="price">10 €</p>
-        <a class="buy-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-            ACHETER
-        </a>
+    <h3>Boutique Press On Nails 💅</h3>
+
+    <div class="shop">
+
+        <!-- PRODUIT 1 -->
+        <div class="product">
+
+            <div class="images">
+                <img src="pressonnail1a.jpg">
+                <img src="pressonnail1b.jpg">
+            </div>
+
+            <h4>Luxury Nude</h4>
+            <p class="price">10 €</p>
+
+            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
+                💳 Payer avec PayPal
+            </a>
+
+        </div>
+
+        <!-- PRODUIT 2 -->
+        <div class="product">
+
+            <div class="images">
+                <img src="pressonnail2a.jpg">
+                <img src="pressonnail2b.jpg">
+            </div>
+
+            <h4>French Glam</h4>
+            <p class="price">10 €</p>
+
+            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
+                💳 Payer avec PayPal
+            </a>
+
+        </div>
+
     </div>
 
-    <!-- PRODUIT 2 -->
-    <div class="product">
-        <img src="pressonnail2.jpg">
-        <h4>French Glam</h4>
-        <p class="price">10 €</p>
-        <a class="buy-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-            ACHETER
-        </a>
-    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="card">
+
+    <h3>Contact</h3>
+
+    <p>📞 06.31.22.09.52</p>
+    <p>📧 ls.glow.by.sandra@gmail.com</p>
+    <p>📸 Instagram : ls.glow.by.sandra</p>
+
+</section>
 
 </div>
 
