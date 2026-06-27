@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -7,7 +7,6 @@
 
 <style>
 
-/* RESET */
 * { box-sizing: border-box; }
 
 body {
@@ -20,13 +19,11 @@ body {
     background-attachment: fixed;
 }
 
-/* OVERLAY */
 .overlay {
     min-height: 100vh;
     padding: 30px 10px;
 }
 
-/* LOGO */
 .logo {
     width: 140px;
     height: 140px;
@@ -35,11 +32,9 @@ body {
     border: 2px solid #d4af37;
 }
 
-/* TITRES */
 h1 { color: #d4af37; }
 h2 { color: #000; font-weight: normal; }
 
-/* NAV STICKY */
 nav {
     position: sticky;
     top: 0;
@@ -55,7 +50,6 @@ nav a {
     font-weight: bold;
 }
 
-/* CARDS */
 .card {
     max-width: 750px;
     margin: 20px auto;
@@ -64,7 +58,6 @@ nav a {
     border-radius: 15px;
 }
 
-/* BOUTON RDV */
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -75,19 +68,12 @@ nav a {
     text-decoration: none;
 }
 
-/* BOX PRESTATIONS */
 .box {
     background: rgba(255,255,255,0.6);
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 20px;
     text-align: left;
-}
-
-.box b {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 10px;
 }
 
 /* GALERIE */
@@ -103,71 +89,43 @@ nav a {
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid #d4af37;
-    cursor: pointer;
 }
 
-/* LIGHTBOX */
-.lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
+/* BOUTIQUE */
+.shop {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product {
+    background: rgba(255,255,255,0.7);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.product img {
     width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.85);
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-}
-
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
     border-radius: 10px;
 }
 
-.lightbox.active {
-    display: flex;
-}
-
-/* CONTACT LUXE */
-.contact-box {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 15px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #f5e6c8, #fff);
-    border: 1px solid #d4af37;
-    text-decoration: none;
-    color: #000;
+.price {
+    font-size: 18px;
     font-weight: bold;
+    color: #d4af37;
 }
 
-/* WHATSAPP FLOAT */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background: #25D366;
+.paypal-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #0070ba;
     color: white;
-    font-size: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 20px;
+    text-decoration: none;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -183,6 +141,7 @@ nav a {
 <nav>
     <a href="#presentation">Accueil</a>
     <a href="#prestations">Prestations</a>
+    <a href="#boutique">Boutique</a>
     <a href="#galerie">Galerie</a>
     <a href="#contact">Contact</a>
 </nav>
@@ -193,10 +152,9 @@ nav a {
     <h3>Bienvenue chez LS Glow by Sandra ✨</h3>
 
     <p>
-        Prothésiste ongulaire à mon domicile 💅<br>
-        Je peux me déplacer à Saint-Jean-de-Luz et alentours pour des prestations soignées et personnalisées.<br>
-        Chaque personne est la bienvenue 🤍<br>
-        Je propose un service accessible, respectueux et adapté à toutes et tous, dans une ambiance simple et bienveillante.
+        Prothésiste ongulaire 💅<br>
+        Saint-Jean-de-Luz et alentours<br>
+        Prestations personnalisées et soignées 🤍
     </p>
 
     <a class="btn" href="https://wa.me/33631220952">📲 Prendre RDV</a>
@@ -213,26 +171,57 @@ nav a {
         Pose gel capsule : 40€<br>
         Pose américaine : 40€<br>
         Gainage : 35€<br>
-        Remplissage gel : 30€<br>
-        Vernis semi-permanent : 20€
+        Remplissage : 30€<br>
+        Semi-permanent : 20€
     </div>
 
-    <div class="box">
-        <b>LES PIEDS & DÉPOSE</b>
-        Semi-permanent pieds : 20€<br>
-        Dépose : 15€
+</section>
+
+<!-- 🛍️ BOUTIQUE -->
+<section id="boutique" class="card">
+
+    <h3>Boutique Press On Nails 💅</h3>
+
+    <div class="shop">
+
+        <div class="product">
+            <img src="presson1.jpg">
+            <h4>Luxury Nude</h4>
+            <p class="price">10 €</p>
+            <p>Fait à la main • Réutilisable • Kit inclus</p>
+
+            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
+                💳 Acheter
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="presson2.jpg">
+            <h4>French Glam</h4>
+            <p class="price">10 €</p>
+            <p>Fait à la main • Réutilisable • Kit inclus</p>
+
+            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
+                💳 Acheter
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="presson3.jpg">
+            <h4>Gold Princess</h4>
+            <p class="price">10 €</p>
+            <p>Fait à la main • Réutilisable • Kit inclus</p>
+
+            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
+                💳 Acheter
+            </a>
+        </div>
+
     </div>
 
-    <div class="box">
-        <b>SUPPLÉMENTS</b>
-        Longueur standard : +0€<br>
-        Longueur L : +5€<br>
-        Longueur XL : +10€<br>
-        Babyboomer : +8€<br>
-        French : +8€<br>
-        Strass : +0,50€ / ongle<br>
-        Nail art : +3€ / ongle
-    </div>
+    <p style="margin-top:15px;">
+        🚚 Livraison : 3,90 € (France)
+    </p>
 
 </section>
 
@@ -242,33 +231,12 @@ nav a {
     <h3>Galerie</h3>
 
     <div class="gallery">
-        <img src="photo1.jpg" onclick="openImg(this.src)">
-        <img src="photo2.jpg" onclick="openImg(this.src)">
-        <img src="photo3.jpg" onclick="openImg(this.src)">
-        <img src="photo4.jpg" onclick="openImg(this.src)">
-        <img src="photo5.jpg" onclick="openImg(this.src)">
-        <img src="photo6.jpg" onclick="openImg(this.src)">
-        <img src="photo7.jpg" onclick="openImg(this.src)">
-        <img src="photo8.jpg" onclick="openImg(this.src)">
-        <img src="photo9.jpg" onclick="openImg(this.src)">
-        <img src="photo10.jpg" onclick="openImg(this.src)">
-        <img src="photo11.jpg" onclick="openImg(this.src)">
-        <img src="photo12.jpg" onclick="openImg(this.src)">
-        <img src="photo13.jpg" onclick="openImg(this.src)">
-        <img src="photo14.jpg" onclick="openImg(this.src)">
-        <img src="photo15.jpg" onclick="openImg(this.src)">
-        <img src="photo16.jpg" onclick="openImg(this.src)">
-        <img src="photo17.jpg" onclick="openImg(this.src)">
-        <img src="photo18.jpg" onclick="openImg(this.src)">
-        <img src="photo19.jpg" onclick="openImg(this.src)">
-        <img src="photo20.jpg" onclick="openImg(this.src)">
-        <img src="photo21.jpg" onclick="openImg(this.src)">
-        <img src="photo22.jpg" onclick="openImg(this.src)">
-        <img src="photo23.jpg" onclick="openImg(this.src)">
-        <img src="photo24.jpg" onclick="openImg(this.src)">
-        <img src="photo25.jpg" onclick="openImg(this.src)">
-        <img src="photo26.jpg" onclick="openImg(this.src)">
-  <img src="photo27.jpg" onclick="openImg(this.src)">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+        <img src="photo4.jpg">
+        <img src="photo5.jpg">
+        <img src="photo6.jpg">
     </div>
 
 </section>
@@ -278,38 +246,13 @@ nav a {
 
     <h3>Contact</h3>
 
-    <div class="contact-box">
-
-        <a class="contact-item" href="tel:+33631220952">📞 06.31.22.09.52</a>
-
-        <a class="contact-item" href="https://wa.me/33631220952">💬 WhatsApp</a>
-
-        <a class="contact-item" href="https://instagram.com/ls.glow.by.sandra" target="_blank">📸 Instagram</a>
-
-        <a class="contact-item" href="mailto:ls.glow.by.sandra@gmail.com">📧 Email</a>
-
-    </div>
+    <p>📞 06.31.22.09.52</p>
+    <p>📧 ls.glow.by.sandra@gmail.com</p>
+    <p>📸 Instagram : ls.glow.by.sandra</p>
 
 </section>
 
 </div>
-
-<a class="whatsapp" href="https://wa.me/33631220952">💬</a>
-
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" onclick="closeImg()">
-    <img id="lightbox-img">
-</div>
-
-<script>
-function openImg(src){
-    document.getElementById("lightbox-img").src = src;
-    document.getElementById("lightbox").classList.add("active");
-}
-function closeImg(){
-    document.getElementById("lightbox").classList.remove("active");
-}
-</script>
 
 </body>
 </html>
