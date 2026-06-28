@@ -3,195 +3,350 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>LS Glow by Sandra</title>
 
 <style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: linear-gradient(135deg, #fffaf0, #f7e7ce);
-  color: #5a4632;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-header {
-  background: linear-gradient(90deg, #d4af37, #f5d97b);
-  text-align: center;
-  padding: 30px 20px;
-  color: white;
+html{
+  scroll-behavior:smooth;
 }
 
-.logo {
-  width: 140px;
-  max-width: 100%;
-  margin-bottom: 15px;
+body{
+  font-family: Georgia, serif;
+  color:#5c3a17;
+  background:linear-gradient(180deg,#f8e3bf 0%,#f8c984 50%,#e59a38 100%);
 }
 
-header h1 {
-  margin: 0;
-  font-size: 32px;
+/* HEADER */
+
+header{
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.6), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(255,255,255,0.2), transparent 30%),
+    linear-gradient(135deg,#f8e7c4,#f6c06f,#e99a3d);
+  border-bottom:2px solid rgba(205,150,50,0.5);
+  text-align:center;
+  padding:40px 20px;
 }
 
-nav {
-  text-align: center;
-  margin: 20px 0;
+.logo{
+  width:180px;
+  max-width:100%;
+  margin-bottom:15px;
 }
 
-nav a {
-  display: inline-block;
-  margin: 8px;
-  padding: 10px 18px;
-  background: white;
-  border-radius: 25px;
-  text-decoration: none;
-  color: #b8860b;
-  border: 2px solid #d4af37;
-  transition: 0.3s;
+header h1{
+  font-size:3rem;
+  font-weight:normal;
+  margin-bottom:10px;
 }
 
-nav a:hover {
-  background: #d4af37;
-  color: white;
+header p{
+  font-size:2rem;
+  font-style:italic;
 }
 
-.cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0 20px;
+.heart{
+  font-size:2rem;
+  color:#d7a130;
+  margin-top:10px;
 }
 
-.card {
-  flex: 1;
-  min-width: 260px;
-  max-width: 350px;
-  background: white;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+/* MENU */
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  padding:20px;
 }
 
-section {
-  background: white;
-  margin: 20px auto;
-  padding: 25px;
-  max-width: 900px;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+nav a{
+  text-decoration:none;
+  color:#7a511e;
+  background:#f8ebd0;
+  border:1px solid #d8a13d;
+  border-radius:30px;
+  padding:14px 28px;
+  min-width:160px;
+  text-align:center;
+  font-weight:bold;
+  transition:0.3s;
 }
 
-.card h3,
-section h2,
-section h3 {
-  color: #b8860b;
+nav a:hover{
+  background:#d8a13d;
+  color:white;
 }
 
-.contact-link {
-  display: inline-block;
-  margin: 10px 5px;
-  padding: 12px 20px;
-  background: #d4af37;
-  color: white;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
+/* BLOCS */
+
+.container{
+  max-width:1300px;
+  margin:auto;
+  padding:20px;
 }
 
-footer {
-  text-align: center;
-  background: #d4af37;
-  color: white;
-  padding: 15px;
-  margin-top: 30px;
+.bloc{
+  background:rgba(255,248,235,0.85);
+  border:1px solid rgba(216,161,61,0.5);
+  border-radius:30px;
+  padding:35px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  backdrop-filter:blur(6px);
+  margin-bottom:25px;
+}
+
+/* ACCUEIL */
+
+.accueil{
+  display:flex;
+  gap:30px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.texte{
+  flex:1;
+  min-width:300px;
+}
+
+.texte h2{
+  font-size:2.5rem;
+  margin-bottom:20px;
+}
+
+.texte p{
+  line-height:1.8;
+  margin-bottom:15px;
+  font-size:1.15rem;
+}
+
+.photo{
+  flex:1;
+  min-width:300px;
+  text-align:center;
+}
+
+.photo img{
+  width:100%;
+  max-width:400px;
+  border-radius:25px;
+  border:2px solid rgba(216,161,61,0.4);
+}
+
+/* CARTES */
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:rgba(255,248,235,0.88);
+  border:1px solid rgba(216,161,61,0.5);
+  border-radius:25px;
+  padding:25px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card h3{
+  text-align:center;
+  margin-bottom:20px;
+  color:#a56a18;
+}
+
+.ligne{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:12px;
+}
+
+.prix{
+  font-weight:bold;
+  color:#c37d18;
+}
+
+/* CONTACT */
+
+.contact{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  text-align:center;
+}
+
+.contact-card{
+  padding:20px;
+}
+
+.contact-card h4{
+  margin-bottom:15px;
+}
+
+.contact a{
+  display:inline-block;
+  margin-top:15px;
+  text-decoration:none;
+  background:linear-gradient(90deg,#d8a13d,#c7841e);
+  color:white;
+  padding:12px 24px;
+  border-radius:30px;
+  font-weight:bold;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:white;
+}
+
+@media (max-width:768px){
+
+  header h1{
+    font-size:2.2rem;
+  }
+
+  header p{
+    font-size:1.5rem;
+  }
+
+  .texte h2{
+    font-size:2rem;
+  }
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
 
-  <!-- Remplace logo.png par ton logo plus tard -->
-  <img src="logo.png" alt="Logo LS Glow by Sandra" class="logo">
+  <img src="logo.jpg" alt="Logo LS Glow by Sandra" class="logo">
 
-  <h1>LS GLOW BY SANDRA 💅</h1>
+  <h1>LS GLOW BY SANDRA</h1>
+
+  <p>Prothésiste Ongulaire</p>
+
+  <div class="heart">💛</div>
 
 </header>
 
 <nav>
-  <a href="#accueil">Accueil</a>
-  <a href="#prestations">Prestations</a>
-  <a href="#contact">Contact</a>
+  <a href="#accueil">ACCUEIL</a>
+  <a href="#prestations">PRESTATIONS</a>
+  <a href="#contact">CONTACT</a>
 </nav>
 
-<section id="accueil">
-  <h2>Bienvenue chez LS Glow by Sandra ✨</h2>
+<div class="container">
 
-  <p>
-    Prothésiste ongulaire à domicile 💅<br>
-    Je travaille principalement à domicile et me déplace également sur Saint-Jean-de-Luz et ses alentours.
-  </p>
+  <section id="accueil" class="bloc accueil">
 
-  <p>
-    Je propose des prestations personnalisées, réalisées avec soin, dans une ambiance chaleureuse, professionnelle et bienveillante.
-  </p>
+    <div class="texte">
 
-  <p>
-    Toutes les personnes sont les bienvenues 🤍
-  </p>
-</section>
+      <h2>Bienvenue chez LS Glow by Sandra ✨</h2>
 
-<div class="cards" id="prestations">
+      <p>Prothésiste ongulaire à domicile 💅</p>
 
-  <div class="card">
-    <h3>💅 Mains</h3>
+      <p>Je travaille principalement à domicile et me déplace également sur Saint-Jean-de-Luz et ses alentours.</p>
 
-    Pose gel capsule : <strong>40€</strong><br>
-    Pose américaine : <strong>40€</strong><br>
-    Gainage : <strong>35€</strong><br>
-    Remplissage gel : <strong>30€</strong><br>
-    Vernis semi-permanent : <strong>20€</strong>
-  </div>
+      <p>Je propose des prestations personnalisées, réalisées avec soin, dans une ambiance chaleureuse, professionnelle et bienveillante.</p>
 
-  <div class="card">
-    <h3>🦶 Pieds & Dépose</h3>
+      <p>Toutes les personnes sont les bienvenues 🤍</p>
 
-    Semi-permanent pieds : <strong>20€</strong><br>
-    Dépose : <strong>15€</strong>
-  </div>
+    </div>
 
-  <div class="card">
-    <h3>💛 Nail Art & Suppléments</h3>
+    <div class="photo">
+      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80" alt="Ongles élégants">
+    </div>
 
-    Longueur standard : <strong>0€</strong><br>
-    Longueur longue : <strong>+5€</strong><br>
-    Longueur XL : <strong>+10€</strong><br>
-    Babyboomer : <strong>+8€</strong><br>
-    French : <strong>+8€</strong><br>
-    Strass : <strong>0,50€ / doigt</strong><br>
-    Nail art : <strong>+3€ / doigt</strong>
-  </div>
+  </section>
+
+  <section id="prestations">
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>💅 PRESTATIONS MAINS</h3>
+
+        <div class="ligne"><span>Pose gel capsule</span><span class="prix">40€</span></div>
+        <div class="ligne"><span>Pose américaine</span><span class="prix">40€</span></div>
+        <div class="ligne"><span>Gainage</span><span class="prix">35€</span></div>
+        <div class="ligne"><span>Remplissage gel</span><span class="prix">30€</span></div>
+        <div class="ligne"><span>Vernis semi-permanent</span><span class="prix">20€</span></div>
+
+      </div>
+
+      <div class="card">
+
+        <h3>🦶 PIEDS & DÉPOSE</h3>
+
+        <div class="ligne"><span>Semi-permanent pieds</span><span class="prix">20€</span></div>
+        <div class="ligne"><span>Dépose</span><span class="prix">15€</span></div>
+
+      </div>
+
+      <div class="card">
+
+        <h3>💛 NAIL ART & SUPPLÉMENTS</h3>
+
+        <div class="ligne"><span>Longueur standard</span><span class="prix">0€</span></div>
+        <div class="ligne"><span>Longueur longue</span><span class="prix">+5€</span></div>
+        <div class="ligne"><span>Longueur XL</span><span class="prix">+10€</span></div>
+        <div class="ligne"><span>Babyboomer</span><span class="prix">+8€</span></div>
+        <div class="ligne"><span>French</span><span class="prix">+8€</span></div>
+        <div class="ligne"><span>Strass</span><span class="prix">0,50€ / doigt</span></div>
+        <div class="ligne"><span>Nail art</span><span class="prix">+3€ / doigt</span></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact" class="bloc">
+
+    <h2 style="text-align:center; margin-bottom:30px;">📞 CONTACT</h2>
+
+    <div class="contact">
+
+      <div class="contact-card">
+        <h4>📞 Téléphone</h4>
+        <p>06 31 22 09 52</p>
+        <a href="tel:+33631220952">APPELER</a>
+      </div>
+
+      <div class="contact-card">
+        <h4>💬 WhatsApp</h4>
+        <p>Discuter sur WhatsApp</p>
+        <a href="https://wa.me/33631220952" target="_blank">WHATSAPP</a>
+      </div>
+
+      <div class="contact-card">
+        <h4>📷 Instagram</h4>
+        <p>@ls.glow.by.sandra</p>
+        <a href="https://www.instagram.com/ls.glow.by.sandra" target="_blank">INSTAGRAM</a>
+      </div>
+
+    </div>
+
+  </section>
 
 </div>
 
-<section id="contact">
-  <h3>📞 Contact</h3>
-
-  <a class="contact-link" href="tel:+33631220952">
-    06 31 22 09 52
-  </a>
-
-  <a class="contact-link" href="https://wa.me/33631220952" target="_blank">
-    WhatsApp 💬
-  </a>
-
-  <a class="contact-link" href="https://www.instagram.com/ls.glow.by.sandra" target="_blank">
-    Instagram 📷
-  </a>
-</section>
-
 <footer>
-  © LS Glow by Sandra
+  © LS GLOW BY SANDRA – Tous droits réservés
 </footer>
 
 </body>
