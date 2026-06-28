@@ -1,10 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>LS Glow by Sandra</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #fff5f8;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    background: white;
+}
+
+header img {
+    width: 160px;
+}
+
+/* MENU */
+nav {
+    background: black;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+}
+
+/* GALERIE */
+.gallery img {
+    width: 180px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* PRESTATIONS */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ddd;
+}
+
+/* BOUTIQUE */
+.btn {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+
 <header>
     <img src="logo.jpeg" alt="Logo LS Glow">
     <h1>LS Glow by Sandra</h1>
 </header>
 
-<section id="galerie">
-    <h2>Galerie</h2>
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#prestations">Prestations</a>
+    <a href="#boutique">Boutique</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ACCUEIL -->
+<section id="accueil">
+    <h2>Bienvenue</h2>
+    <p>Press-on nails faits main, personnalisés et tendances ✨</p>
+</section>
+
+<!-- GALERIE -->
+<section id="galerie" class="gallery">
+    <h2>Galerie de mes poses</h2>
 
     <img src="nail1a.jpg" onclick="openImage(this.src)">
     <img src="nail1b.jpg" onclick="openImage(this.src)">
@@ -12,10 +100,51 @@
     <img src="nail2b.jpg" onclick="openImage(this.src)">
 </section>
 
+<!-- PRESTATIONS -->
+<section id="prestations">
+    <h2>Prestations & Prix</h2>
+
+    <div class="card">
+        <h3>Pose classique</h3>
+        <p>20€</p>
+    </div>
+
+    <div class="card">
+        <h3>Pose personnalisée</h3>
+        <p>25€</p>
+    </div>
+
+    <div class="card">
+        <h3>Dépose</h3>
+        <p>10€</p>
+    </div>
+</section>
+
+<!-- BOUTIQUE -->
+<section id="boutique">
+    <h2>Boutique</h2>
+
+    <div class="card">
+        <h3>Set Press-On Nails</h3>
+        <p>25€</p>
+
+        <form action="https://www.paypal.com/pay" method="post" target="_blank">
+            <button class="btn">Acheter</button>
+        </form>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Instagram : @lsglowbysandra</p>
+</section>
+
 <script>
 function openImage(src){
     window.open(src, "_blank");
 }
 </script>
- 
 
+</body>
+</html>
