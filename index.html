@@ -8,7 +8,7 @@
 body{
     margin:0;
     font-family: Arial;
-    background: url('fond2.jpg');
+    background: url('fond2.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -44,24 +44,18 @@ section{
     border-radius:10px;
 }
 
-/* ===== GALERIE PRO ===== */
+/* GALERIE */
 .gallery-grid{
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 10px;
+    gap:10px;
 }
 
 .gallery-grid img{
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.gallery-grid img:hover{
-    transform: scale(1.05);
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    border-radius:12px;
 }
 
 /* CARDS */
@@ -100,17 +94,16 @@ section{
     <a href="#contact">Contact</a>
 </nav>
 
-<!-- ACCUEIL -->
 <section id="accueil">
     <h2>Bienvenue ✨</h2>
     <p>Press-on nails faits main, personnalisés et uniques</p>
 </section>
 
-<!-- GALERIE -->
 <section id="galerie">
     <h2>MES POSES</h2>
 
     <div class="gallery-grid">
+
         <img src="photo1.jpg">
         <img src="photo2.jpg">
         <img src="photo3.jpg">
@@ -138,10 +131,10 @@ section{
         <img src="photo25.jpg">
         <img src="photo26.jpg">
         <img src="photo27.jpg">
+
     </div>
 </section>
 
-<!-- PRESTATIONS -->
 <section id="prestations">
     <h2>Prestations</h2>
 
@@ -150,12 +143,11 @@ section{
     <div class="card">Dépose - 10€</div>
 </section>
 
-<!-- BOUTIQUE -->
 <section id="boutique">
     <h2>Boutique</h2>
 
     <div class="card">
-        <h3>Set Press-On Nails</h3>
+        <h3>Set Nails</h3>
         <p>25€</p>
 
         <form action="https://www.paypal.com/pay" target="_blank">
@@ -164,7 +156,6 @@ section{
     </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
     <p>Instagram : @lsglowbysandra</p>
@@ -172,4 +163,3 @@ section{
 
 </body>
 </html>
-
