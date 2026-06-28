@@ -1,180 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LS Glow by Sandra</title>
+  <meta charset="UTF-8">
+  <title>LS Glow by Sandra</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #fff;
+    }
 
-<style>
+    header {
+      text-align: center;
+      padding: 20px;
+    }
 
-* { box-sizing: border-box; }
+    header img {
+      width: 150px;
+    }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: url("marbre.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+    nav {
+      background: #000;
+      text-align: center;
+      padding: 10px;
+    }
 
-.overlay {
-    min-height: 100vh;
-    padding: 30px 10px;
-}
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-.logo {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid #d4af37;
-}
+    section {
+      padding: 40px;
+      text-align: center;
+    }
 
-h1 { color: #d4af37; }
-h2 { color: #000; font-weight: normal; }
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+    }
 
-nav {
-    position: sticky;
-    top: 0;
-    background: rgba(245, 230, 200, 0.95);
-    padding: 10px;
-    z-index: 1000;
-}
+    .boutique-item {
+      display: inline-block;
+      margin: 15px;
+      width: 200px;
+    }
 
-nav a {
-    margin: 0 10px;
-    color: #d4af37;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .boutique-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
 
-.card {
-    max-width: 750px;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(245, 230, 200, 0.92);
-    border-radius: 15px;
-}
-
-/* BOUTIQUE */
-.shop {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.product {
-    background: rgba(255,255,255,0.7);
-    padding: 15px;
-    border-radius: 12px;
-}
-
-/* 2 PHOTOS CÔTE À CÔTE */
-.images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
-}
-
-.images img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #d4af37;
-}
-
-.paypal-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #0070ba;
-    color: white;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-</style>
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px;
+      background: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="overlay">
-
 <header>
-    <img src="logo.jpeg" class="logo">
-    <h1>LS GLOW BY SANDRA</h1>
-    <h2>Press On Nails 💅</h2>
+  <img src="logo.jpeg" alt="Logo LS Glow">
+  <h1>LS Glow by Sandra</h1>
 </header>
 
 <nav>
-    <a href="#boutique">Boutique</a>
-    <a href="#contact">Contact</a>
+  <a href="#accueil">Accueil</a>
+  <a href="#prestations">Prestations</a>
+  <a href="#galerie">Galerie</a>
+  <a href="#boutique">Boutique</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<!-- BOUTIQUE -->
-<section id="boutique" class="card">
+<section id="accueil">
+  <h2>Bienvenue</h2>
+  <p>Bienvenue sur mon site de prothésie ongulaire 💅</p>
+</section>
 
-    <h3>Boutique Press On Nails 💅</h3>
+<section id="prestations">
+  <h2>Prestations</h2>
+  <p>Pose gel, acrygel, press-on nails personnalisés.</p>
+</section>
 
-    <div class="shop">
+<section id="galerie">
+  <h2>Galerie</h2>
+  <div class="gallery">
+    <img src="nail1a.jpg">
+    <img src="nail2a.jpg">
+    <img src="nail3a.jpg">
+  </div>
+</section>
 
-        <!-- PRODUIT 1 -->
-        <div class="product">
+<section id="boutique">
+  <h2>Boutique Press-On Nails</h2>
 
-            <div class="images">
-                <img src="nail1a.jpg">
-                <img src="nail1b.jpg">
-            </div>
+  <div class="boutique-item">
+    <img src="nail1a.jpg">
+    <p>Set 1</p>
+    <a class="btn" href="#">Acheter</a>
+  </div>
 
-            <h4>Modèle 1</h4>
-            <p class="price">10 €</p>
+  <div class="boutique-item">
+    <img src="nail2a.jpg">
+    <p>Set 2</p>
+    <a class="btn" href="#">Acheter</a>
+  </div>
 
-            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-                Payer avec PayPal
-            </a>
-
-        </div>
-
-        <!-- PRODUIT 2 -->
-        <div class="product">
-
-            <div class="images">
-                <img src="nail2a.jpg">
-                <img src="nail2b.jpg">
-            </div>
-
-            <h4>Modèle 2</h4>
-            <p class="price">10 €</p>
-
-            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-                Payer avec PayPal
-            </a>
-
-        </div>
-
-    </div>
+  <div class="boutique-item">
+    <img src="nail3a.jpg">
+    <p>Set 3</p>
+    <a class="btn" href="#">Acheter</a>
+  </div>
 
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="card">
-
-    <h3>Contact</h3>
-
-    <p>📞 06.31.22.09.52</p>
-    <p>📧 ls.glow.by.sandra@gmail.com</p>
-
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Instagram / Email / Réservation</p>
 </section>
-
-</div>
 
 </body>
 </html>
