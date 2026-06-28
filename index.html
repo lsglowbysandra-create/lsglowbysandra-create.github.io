@@ -5,74 +5,78 @@
 <title>LS Glow by Sandra</title>
 
 <style>
-body {
-    margin: 0;
+body{
+    margin:0;
     font-family: Arial;
-    background: #fff5f8;
+    background: url('fond2.jpg');
+    background-size: cover;
 }
 
 /* HEADER */
-header {
-    text-align: center;
-    padding: 20px;
-    background: white;
+header{
+    text-align:center;
+    background:white;
+    padding:20px;
 }
 
-header img {
-    width: 160px;
+header img{
+    width:150px;
 }
 
 /* MENU */
-nav {
-    background: black;
-    text-align: center;
-    padding: 10px;
+nav{
+    background:black;
+    text-align:center;
+    padding:10px;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
+nav a{
+    color:white;
+    margin:0 12px;
+    text-decoration:none;
 }
 
 /* SECTIONS */
-section {
-    padding: 40px;
+section{
+    padding:40px;
+    background: rgba(255,255,255,0.9);
+    margin:20px;
+    border-radius:10px;
 }
 
 /* GALERIE */
-.gallery img {
-    width: 180px;
-    margin: 10px;
-    border-radius: 10px;
-    cursor: pointer;
+.gallery img{
+    width:160px;
+    margin:8px;
+    border-radius:10px;
+    cursor:pointer;
 }
 
-/* PRESTATIONS */
-.card {
-    background: white;
-    padding: 15px;
-    margin: 10px;
-    display: inline-block;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #ddd;
+/* BOUTIQUE / CARDS */
+.card{
+    background:white;
+    padding:15px;
+    margin:10px;
+    display:inline-block;
+    border-radius:10px;
+    box-shadow:0 0 5px #ccc;
 }
 
-/* BOUTIQUE */
-.btn {
-    background: black;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
+/* bouton */
+.btn{
+    background:black;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+    display:inline-block;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <img src="logo.jpeg" alt="Logo LS Glow">
+    <img src="logo.jpeg">
     <h1>LS Glow by Sandra</h1>
 </header>
 
@@ -86,65 +90,117 @@ section {
 
 <!-- ACCUEIL -->
 <section id="accueil">
-    <h2>Bienvenue</h2>
-    <p>Press-on nails faits main, personnalisés et tendances ✨</p>
+    <h2>Bienvenue ✨</h2>
+    <p>Press-on nails faits main, personnalisés et uniques</p>
 </section>
 
-<!-- GALERIE -->
-<section id="galerie" class="gallery">
-    <h2>Galerie de mes poses</h2>
+<!-- GALERIE PHOTOS CLIENT / CONTENU -->
+<section id="galerie">
+<h2>Mes poses</h2>
 
-    <img src="nail1a.jpg" onclick="openImage(this.src)">
-    <img src="nail1b.jpg" onclick="openImage(this.src)">
-    <img src="nail2a.jpg" onclick="openImage(this.src)">
-    <img src="nail2b.jpg" onclick="openImage(this.src)">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+<img src="photo7.jpg">
+<img src="photo8.jpg">
+<img src="photo9.jpg">
+<img src="photo10.jpg">
+<img src="photo11.jpg">
+<img src="photo12.jpg">
+<img src="photo13.jpg">
+<img src="photo14.jpg">
+<img src="photo15.jpg">
+<img src="photo16.jpg">
+<img src="photo17.jpg">
+<img src="photo18.jpg">
+<img src="photo19.jpg">
+<img src="photo20.jpg">
+<img src="photo21.jpg">
+<img src="photo22.jpg">
+<img src="photo23.jpg">
+<img src="photo24.jpg">
+<img src="photo25.jpg">
+<img src="photo26.jpg">
+<img src="photo27.jpg">
+
+</section>
+
+<!-- GALERIE NAILS -->
+<section>
+<h2>Press-on Nails</h2>
+
+<img src="nail1a.jpg">
+<img src="nail2b.jpg">
+<img src="nail3a.jpg">
+<img src="nail4b.jpg">
+<img src="nail5a.jpg">
+<img src="nail6b.jpg">
+<img src="nail7a.jpg">
+<img src="nail8b.jpg">
+<img src="nail9a.jpg">
+<img src="nail10b.jpg">
+<img src="nail11a.jpg">
+<img src="nail12b.jpg">
+<img src="nail13a.jpg">
+<img src="nail14b.jpg">
+<img src="nail15a.png">
+<img src="nail16b.jpg">
+<img src="nail17a.jpg">
+<img src="nail18b.jpg">
+<img src="nail19a.jpg">
+<img src="nail20b.jpg">
+<img src="nail21a.jpg">
+<img src="nail22b.jpg">
+<img src="nail23a.jpg">
+<img src="nail24b.jpg">
+<img src="nail25a.jpg">
+<img src="nail26b.jpg">
+<img src="nail27a.jpg">
+<img src="nail28b.jpg">
+<img src="nail29a.jpg">
+<img src="nail30b.jpg">
+<img src="nail31a.jpg">
+<img src="nail32b.jpg">
+<img src="nail33a.jpg">
+<img src="nail34b.jpg">
+<img src="nail35a.jpg">
+<img src="nail36b.jpg">
+
 </section>
 
 <!-- PRESTATIONS -->
 <section id="prestations">
-    <h2>Prestations & Prix</h2>
+<h2>Prestations</h2>
 
-    <div class="card">
-        <h3>Pose classique</h3>
-        <p>20€</p>
-    </div>
+<div class="card">Pose classique - 20€</div>
+<div class="card">Pose personnalisée - 25€</div>
+<div class="card">Dépose - 10€</div>
 
-    <div class="card">
-        <h3>Pose personnalisée</h3>
-        <p>25€</p>
-    </div>
-
-    <div class="card">
-        <h3>Dépose</h3>
-        <p>10€</p>
-    </div>
 </section>
 
 <!-- BOUTIQUE -->
 <section id="boutique">
-    <h2>Boutique</h2>
+<h2>Boutique</h2>
 
-    <div class="card">
-        <h3>Set Press-On Nails</h3>
-        <p>25€</p>
+<div class="card">
+<h3>Set Nails Glam</h3>
+<p>25€</p>
 
-        <form action="https://www.paypal.com/pay" method="post" target="_blank">
-            <button class="btn">Acheter</button>
-        </form>
-    </div>
+<form action="https://www.paypal.com/pay" target="_blank">
+<button class="btn">Acheter</button>
+</form>
+</div>
+
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Instagram : @lsglowbysandra</p>
+<h2>Contact</h2>
+<p>Instagram : @lsglowbysandra</p>
 </section>
-
-<script>
-function openImage(src){
-    window.open(src, "_blank");
-}
-</script>
 
 </body>
 </html>
