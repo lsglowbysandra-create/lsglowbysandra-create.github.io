@@ -6,6 +6,30 @@
 
 <style>
 body{
+.prestations-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.colonne {
+    flex: 1;
+    min-width: 250px;
+    max-width: 320px;
+}
+
+.colonne h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.colonne p {
+    margin: 8px 0;
+    text-align: left;
+}
     margin:0;
     font-family: Arial;
     background-color: #d4af37; /* or */  
@@ -201,31 +225,42 @@ footer a{
         <img src="photo27.jpg">
     </div>
 </section>
-
 <!-- PRESTATIONS -->
 <section id="prestations">
     <h2 style="text-align: center;">Prestations et tarifs</h2>
 
-    <h3>💅 LES MAINS</h3>
-    <p>Pose de gel capsules : 40€</p>
-    <p>Pose américaine : 40€</p>
-    <p>Gainage : 35€</p>
-    <p>Remplissage gel : 30€</p>
-    <p>Vernis semi-permanent : 20€</p>
+    <div class="prestations-grid">
 
-    <h3>🦶 PIEDS & DÉPOSE</h3>
-    <p>Semi-permanent pieds : 20€</p>
-    <p>Dépose : 15€</p>
+        <div class="colonne">
+            <h3>💅 LES MAINS</h3>
+            <p>Pose de gel capsules : 40€</p>
+            <p>Pose américaine : 40€</p>
+            <p>Gainage : 35€</p>
+            <p>Remplissage gel : 30€</p>
+            <p>Vernis semi-permanent : 20€</p>
+        </div>
 
-    <h3>✨ SUPPLÉMENTS / NAIL ART</h3>
-    <p>Longueur standard : +0€</p>
-    <p>Longueur long : +5€</p>
-    <p>Longueur XL : +10€</p>
-    <p>Babyboomer : +8€</p>
-    <p>French : +8€</p>
-    <p>Strass : +0.50€/ongle</p>
-    <p>Nail art : +3€/ongle</p>
-</section>       
+        <div class="colonne">
+            <h3>🦶 PIEDS & DÉPOSE</h3>
+            <p>Semi-permanent pieds : 20€</p>
+            <p>Dépose : 15€</p>
+        </div>
+
+        <div class="colonne">
+            <h3>✨ SUPPLÉMENTS / NAIL ART</h3>
+            <p>Longueur standard : +0€</p>
+            <p>Longueur long : +5€</p>
+            <p>Longueur XL : +10€</p>
+            <p>Babyboomer : +8€</p>
+            <p>French : +8€</p>
+            <p>Strass : +0,50€/ongle</p>
+            <p>Nail art : +3€/ongle</p>
+        </div>
+
+    </div>
+</section>
+    
+    
 <section id="boutique">
     <h2>Boutique Press-On Nails 💅</h2>
 
