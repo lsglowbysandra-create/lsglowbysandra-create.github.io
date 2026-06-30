@@ -1,38 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>LS Glow by Sandra</title>
+
+<style>
+
 /* ===== GLOBAL ===== */
 body {
     margin: 0;
     font-family: Arial;
     background-color: #f3e2b3;
 }
-<body>
 
-<section id="accueil">
-
-    <img src="logo.jpeg">
-
-    <h1>Bienvenue chez LS Glow by Sandra 💅</h1>
-
-    <a class="paypal-btn" href="https://wa.me/33631220952" target="_blank">
-        📅 Prendre rendez-vous
-    </a>
-
-    <p>
-        Je suis <strong>prothésiste ongulaire</strong>, spécialisée dans la réalisation de poses d'ongles et de press-on nails.
-    </p>
-
-    <p>
-        Je vous accueille <strong>principalement à mon domicile</strong>, dans un espace dédié.
-    </p>
-
-    <p>
-        ✨ Au plaisir de prendre soin de vos ongles ✨
-    </p>
-
-</section>
-
-</body>
-</html>
-/* ===== SECTIONS MARBRE ===== */
+/* ===== SECTIONS ===== */
 #accueil,
 #prestations,
 #boutique,
@@ -41,11 +22,6 @@ body {
     background-size: cover;
     padding: 60px 20px;
     box-sizing: border-box;
-}
-
-/* ===== TITRES ===== */
-h2 {
-    text-align: center;
 }
 
 /* ===== ACCUEIL ===== */
@@ -59,23 +35,23 @@ h2 {
     margin: auto;
 }
 
+/* ===== TITRES ===== */
+h2 {
+    text-align: center;
+}
+
 /* ===== PRESTATIONS ===== */
 .prestations-grid {
     display: flex;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    margin-top: 30px;
 }
 
 .colonne {
     min-width: 250px;
     max-width: 320px;
     text-align: center;
-}
-
-.colonne h3 {
-    margin-bottom: 10px;
 }
 
 /* ===== BOUTIQUE ===== */
@@ -96,19 +72,18 @@ h2 {
 /* PHOTOS */
 .photos {
     display: flex;
-    justify-content: center;
     gap: 8px;
+    justify-content: center;
 }
 
 .photos img {
     width: 48%;
-    max-width: 130px;
     height: 130px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-/* PAYPAL */
+/* BOUTON */
 .paypal-btn {
     display: inline-block;
     margin-top: 10px;
@@ -117,10 +92,6 @@ h2 {
     color: white;
     text-decoration: none;
     border-radius: 6px;
-}
-
-.paypal-btn:hover {
-    opacity: 0.8;
 }
 
 /* CONTACT */
@@ -133,10 +104,10 @@ h2 {
 
 <body>
 
-<!-- ===== ACCUEIL ===== -->
+<!-- ACCUEIL -->
 <section id="accueil">
 
-    <img src="logo.jpeg" alt="logo">
+    <img src="logo.jpeg">
 
     <h1>Bienvenue chez LS Glow by Sandra 💅</h1>
 
@@ -144,24 +115,25 @@ h2 {
         📅 Prendre rendez-vous
     </a>
 
-    <p>Je suis prothésiste ongulaire spécialisée dans les press-on nails.</p>
+    <p>
+        Je suis prothésiste ongulaire spécialisée dans les press-on nails.
+    </p>
 
-    <p>Je vous accueille à domicile sur Saint-Jean-de-Luz.</p>
+    <p>
+        Je vous accueille à domicile sur Saint-Jean-de-Luz.
+    </p>
 
 </section>
 
-<!-- ===== PRESTATIONS ===== -->
+<!-- PRESTATIONS -->
 <section id="prestations">
     <h2>Prestations et tarifs</h2>
 
     <div class="prestations-grid">
-
         <div class="colonne">
-            <h3>💅 LES MAINS</h3>
+            <h3>💅 MAINS</h3>
             <p>Pose gel capsules : 40€</p>
-            <p>Pose américaine : 40€</p>
             <p>Gainage : 35€</p>
-            <p>Remplissage : 30€</p>
         </div>
 
         <div class="colonne">
@@ -169,11 +141,10 @@ h2 {
             <p>Semi-permanent : 20€</p>
             <p>Dépose : 15€</p>
         </div>
-
     </div>
 </section>
 
-<!-- ===== BOUTIQUE ===== -->
+<!-- BOUTIQUE -->
 <section id="boutique">
     <h2>Boutique Press-On Nails 💅</h2>
 
@@ -185,30 +156,18 @@ h2 {
                 <img src="nail2b.jpg">
             </div>
             <p><strong>Modèle 1</strong></p>
-            <p>10 € + 4 € livraison</p>
-            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">Commander</a>
-        </div>
-
-        <div class="boutique-item">
-            <div class="photos">
-                <img src="nail3a.jpg">
-                <img src="nail4b.jpg">
-            </div>
-            <p><strong>Modèle 2</strong></p>
-            <p>10 € + 4 € livraison</p>
-            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">Commander</a>
+            <p>14 €</p>
+            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488">Commander</a>
         </div>
 
     </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
+<!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
-
     <p>Instagram : @lsglowbysandra</p>
     <p>WhatsApp : 06 31 22 09 52</p>
-    <p>Téléphone : 06 31 22 09 52</p>
 </section>
 
 </body>
