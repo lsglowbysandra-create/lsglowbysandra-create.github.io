@@ -5,70 +5,26 @@
 <title>LS Glow by Sandra</title>
 
 <style>
+
+/* ===== GLOBAL ===== */
 body {
     margin: 0;
     font-family: Arial;
-    background-color: #d4af37; /* or */
+    background-color: #d4af37;
 }
 
-/* PRESTATIONS */
-#prestations h2 {
-    text-align: center;
-}
-
-.prestations-grid {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.colonne {
-    flex: 1;
-    min-width: 250px;
-    max-width: 320px;
-}
-
-.colonne h3 {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.colonne p {
-    margin: 8px 0;
-    text-align: left;
-    text-align: center;
-}
-
-/* CONTACT */
-#contact {
+/* SECTIONS FOND MARBRE */
+#accueil,
+#prestations,
+#boutique,
+#contact,
+#galerie {
     background: url("marbre.jpg") no-repeat center center;
     background-size: cover;
     padding: 50px 20px;
 }
-     #boutique{
-    background: url("marbre.jpg") no-repeat center center;
-    background-size: cover;
-    padding: 50px 20px;
-}
-     #accueil{
-    background: url("marbre.jpg") no-repeat center center;
-    background-size: cover;
-    padding: 100px 20px;
-}
-#galerie{
-    background: url("marbre.jpg") no-repeat center center;
-    background-size: cover;
-    padding: 50px 20px;
-}     
-#prestations{
-    background: url("marbre.jpg") no-repeat center center;
-    background-size: cover;
-    padding: 50px 20px;
-}
-     /* HEADER */
+
+/* HEADER */
 header{
     text-align:center;
     background: linear-gradient(90deg, #ff9a3c, #ffcc70, #d4af37);
@@ -100,6 +56,20 @@ section{
     border-radius:10px;
 }
 
+/* PRESTATIONS */
+.prestations-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.colonne {
+    min-width: 250px;
+    max-width: 320px;
+    text-align: center;
+}
+
 /* GALERIE */
 .gallery-grid{
     display:grid;
@@ -114,44 +84,47 @@ section{
     border-radius:12px;
 }
 
-/* CARDS */
+/* BOUTIQUE GRID */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+/* CARD */
 .card{
-    background:white;
-    padding:15px;
-    margin:10px;
-    display:inline-block;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* PHOTOS */
+.card-images{
+    display:flex;
+    gap:5px;
+    justify-content: center;
+}
+
+.card-images img{
+    width:48%;
+    height:120px;
+    object-fit:cover;
     border-radius:10px;
-    box-shadow:0 0 5px #ccc;
 }
 
-/* BUTTON */
+/* BOUTON */
 .btn{
+    display:inline-block;
     background:black;
     color:white;
-    padding:10px;
-    border:none;
-    cursor:pointer;
-}
-
-/* FOOTER */
-footer{
-    background:black;
-    text-align:center;
-    padding:20px;
-    margin-top:20px;
-}
-
-footer p{
-    color:white;
-    margin:8px 0;
-}
-
-footer a{
-    color:white;
+    padding:10px 12px;
+    border-radius:6px;
     text-decoration:none;
-    display:block;
-    margin:8px 0;
+    margin-top:10px;
 }
+
 </style>
 </head>
 
@@ -175,540 +148,94 @@ footer a{
 
     <h2>Bienvenue chez LS Glow by Sandra ✨</h2>
 
-    <a href="https://wa.me/33631220952" class="btn-rdv" target="_blank">
+    <a class="btn" href="https://wa.me/33631220952" target="_blank">
         📅 Prendre rendez-vous
     </a>
 
-    <p>
-        Je suis <strong>prothésiste ongulaire</strong>, spécialisée dans la réalisation de poses d'ongles et de press-on nails.
-    </p>
+    <p>Prothésiste ongulaire spécialisée en press-on nails.</p>
+    <p>Saint-Jean-de-Luz et alentours.</p>
 
-    <p>
-        Je vous accueille <strong>principalement à mon domicile</strong>, dans un espace dédié à la beauté de vos ongles. Je peux également me déplacer sur le secteur de <strong>Saint-Jean-de-Luz</strong>, selon les besoins.
-    </p>
-
-    <p>
-        Que vous recherchiez une pose naturelle, élégante ou plus originale, je prends le temps de vous conseiller afin de créer une prestation qui vous ressemble.
-    </p>
-
-    <p>
-        <strong>Femmes, hommes et adolescents, tout le monde est le bienvenu.</strong> Mon objectif est de vous offrir un moment agréable, dans une ambiance conviviale, avec un travail soigné et des produits de qualité.
-    </p>
-
-    <p><em>✨ Au plaisir de prendre soin de vos ongles ! ✨</em></p>
-
-</section>
 </section>
 
 <!-- GALERIE -->
 <section id="galerie">
-    <h2>MES POSES</h2>
+<h2>Mes poses</h2>
 
-    <div class="gallery-grid">
-        <img src="photo1.jpg">
-        <img src="photo2.jpg">
-        <img src="photo3.jpg">
-        <img src="photo4.jpg">
-        <img src="photo5.jpg">
-        <img src="photo6.jpg">
-        <img src="photo7.jpg">
-        <img src="photo8.jpg">
-        <img src="photo9.jpg">
-        <img src="photo10.jpg">
-        <img src="photo11.jpg">
-        <img src="photo12.jpg">
-        <img src="photo13.jpg">
-        <img src="photo14.jpg">
-        <img src="photo15.jpg">
-        <img src="photo16.jpg">
-        <img src="photo17.jpg">
-        <img src="photo18.jpg">
-        <img src="photo19.jpg">
-        <img src="photo20.jpg">
-        <img src="photo21.jpg">
-        <img src="photo22.jpg">
-        <img src="photo23.jpg">
-        <img src="photo24.jpg">
-        <img src="photo25.jpg">
-        <img src="photo26.jpg">
-        <img src="photo27.jpg">
-    </div>
+<div class="gallery-grid">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+</div>
 </section>
+
 <!-- PRESTATIONS -->
 <section id="prestations">
-    <h2 style="text-align: center;">Prestations et tarifs</h2>
+<h2>Prestations et tarifs</h2>
 
-    <div class="prestations-grid">
+<div class="prestations-grid">
 
-        <div class="colonne">
-            <h3>💅 LES MAINS</h3>
-            <p>Pose de gel capsules : 40€</p>
-            <p>Pose américaine : 40€</p>
-            <p>Gainage : 35€</p>
-            <p>Remplissage gel : 30€</p>
-            <p>Vernis semi-permanent : 20€</p>
-        </div>
+<div class="colonne">
+<h3>💅 MAINS</h3>
+<p>Gel capsules : 40€</p>
+<p>Gainage : 35€</p>
+</div>
 
-        <div class="colonne">
-            <h3>🦶 PIEDS & DÉPOSE</h3>
-            <p>Semi-permanent pieds : 20€</p>
-            <p>Dépose : 15€</p>
-        </div>
+<div class="colonne">
+<h3>🦶 PIEDS</h3>
+<p>Semi-permanent : 20€</p>
+<p>Dépose : 15€</p>
+</div>
 
-        <div class="colonne">
-            <h3>✨ SUPPLÉMENTS / NAIL ART</h3>
-            <p>Longueur standard : +0€</p>
-            <p>Longueur long : +5€</p>
-            <p>Longueur XL : +10€</p>
-            <p>Babyboomer : +8€</p>
-            <p>French : +8€</p>
-            <p>Strass : +0,50€/ongle</p>
-            <p>Nail art : +3€/ongle</p>
-        </div>
-
-    </div>
+</div>
 </section>
 
-
+<!-- BOUTIQUE -->
 <section id="boutique">
-    <h2>Boutique Press-On Nails 💅</h2>
-
-    <div class="grid">
-<style>
-/* BOUTIQUE GRID PROPRE */
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-/* CARTE PRODUIT */
-.card{
-    background: white;
-    padding: 12px;
-    border-radius: 12px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.15);
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* LES 2 PHOTOS BIEN ALIGNEES */
-.card img{
-    width: 48%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* ALIGNEMENT DES 2 IMAGES */
-.card-images{
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    width: 100%;
-}
-
-/* BOUTON */
-.btn{
-    background: black;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-</style>
-
-        <!-- MODELE 1 -->
-        <div class="card">
-
-            <div class="card-images">
-                <img src="nail1a.jpg" style="width:100px;">
-                <img src="nail2b.jpg" style="width:100px;">
-           </div>
-
-           <p>Modèle 1</p>
-           <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-            </form>
-
-             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-          </form>
-
-        </div>
-
-        <!-- MODELE 2 -->
-        <div class="card">
-
-            <div class="card-images">
-                <img src="nail3a.jpg" style="width:100px;">
-                <img src="nail4b.jpg" style="width:100px;">
-           </div>
-
-            <p>Modèle 2</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-            </form>
-
-             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-           </form>
-
-        </div>
-
-        <!-- MODELE 3 -->
-        <div class="card">
-
-            <div class="card-images">
-                <img src="nail5a.jpg" style="width:100px;">
-                <img src="nail6b.jpg" style="width:100px;">
-            </div>
-            <p>Modèle 3</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-            </form>
-
-           <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-         </form>  
-
-        </div>
-
-        <!-- MODELE 4 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail7a.jpg" style="width:100px;">
-              <img src="nail8b.jpg" style="width:100px;">
-            </div>
-
-            <p>Modèle 4</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-          <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-
-        </div>
-
-        <!-- MODELE 5 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail9a.jpg" style="width:100px;">
-              <img src="nail10b.jpg" style="width:100px;">
-            </div>
-
-            <p>Modèle 5</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 6 -->
-        <div class="card">
-
-            <div class="card-images">
-               <img src="nail11a.jpg" style="width:100px;">
-               <img src="nail12b.jpg" style="width:100px;">
-           </div>
-
-            <p>Modèle 6</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 7 -->
-        <div class="card">
-
-            <div class="card-images">
-               <img src="nail13a.jpg" style="width:100px;">
-               <img src="nail14b.jpg" style="width:100px;">
-
-            </div>
-
-            <p>Modèle 7</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 8 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail5a.jpg" style="width:100px;">
-              <img src="nail6b.jpg" style="width:100px;">
-
-            </div>
-
-            <p>Modèle 8</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-           <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 9 -->
-        <div class="card">
-           <div class="card-images">
-            <img src="nail7a.jpg" style="width:100px;">
-            <img src="nail8b.jpg" style="width:100px;">
-           </div>
-               <p>Modèle 9</p>
-            <p>10 €</p>
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-        </div>
-
-        <!-- MODELE 10 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail19a.jpg" style="width:100px;">
-              <img src="nail20b.jpg" style="width:100px;">
-          </div>
-
-            <p>Modèle 10</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 11 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail21a.jpg" style="width:100px;">
-              <img src="nail22b.jpg" style="width:100px;">
-            </div>
-
-            <p>Modèle 11</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 12 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail23a.jpg" style="width:100px;">
-              <img src="nail24b.jpg" style="width:100px;">
-            </div>
-
-            <p>Modèle 12</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-          <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 13 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail25a.jpg" style="width:100px;">
-              <img src="nail26b.jpg" style="width:100px;">
-           </div>
-
-            <p>Modèle 13</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 14 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail27a.jpg" style="width:100px;">
-              <img src="nail28b.jpg" style="width:100px;">
-            </div>
-
-            <p>Modèle 14</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 15 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail29a.jpg" style="width:100px;">
-              <img src="nail30b.jpg" style="width:100px;">
-           </div>
-
-            <p>Modèle 15</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 16 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail31a.jpg" style="width:100px;">
-              <img src="nail32b.jpg" style="width:100px;">
-            </div>
-
-            <p>Modèle 16</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 17 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail33a.jpg" style="width:100px;">
-              <img src="nail34b.jpg" style="width:100px;">
-            </div>
-
-            <p>Modèle 17</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-             <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-
-        <!-- MODELE 18 -->
-        <div class="card">
-
-            <div class="card-images">
-              <img src="nail35a.jpg" style="width:100px;">
-              <img src="nail36b.jpg" style="width:100px;">
-           </div>
-
-            <p>Modèle 18</p>
-            <p>10 €</p>
-
-            <form action="https://www.paypal.com/pay" target="_blank">
-                <button class="btn">Acheter</button>
-            <a class="paypal-btn" href="https://paypal.me/SandraLefevre488" target="_blank">
-        Commander ce modèle - 10 €
-    </a>
-            </form>
-
-        </div>
-       </div>
-
+<h2>Boutique Press-On Nails 💅</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-images">
+<img src="nail1a.jpg">
+<img src="nail2b.jpg">
+</div>
+<p>Modèle 1 - 10€</p>
+
+<a class="btn" href="https://wa.me/33631220952?text=Bonjour%20je%20veux%20le%20mod%C3%A8le%201%20-%2010%E2%82%AC" target="_blank">
+Commander
+</a>
+</div>
+
+<div class="card">
+<div class="card-images">
+<img src="nail3a.jpg">
+<img src="nail4b.jpg">
+</div>
+<p>Modèle 2 - 10€</p>
+
+<a class="btn" href="https://wa.me/33631220952?text=Bonjour%20je%20veux%20le%20mod%C3%A8le%202%20-%2010%E2%82%AC" target="_blank">
+Commander
+</a>
+</div>
+
+</div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2>Contact & Prise de RDV</h2>
+<h2>Contact</h2>
 
-    <p>📸 Instagram : 
-        <a href="https://instagram.com/lsglowbysandra" target="_blank">
-            @lsglowbysandra
-        </a>
-    </p>
+<p>Instagram : @lsglowbysandra</p>
+<p>WhatsApp : 06 31 22 09 52</p>
 
-    <p>💬 WhatsApp (prise de RDV) : 
-        <a href="https://wa.me/33631220952" target="_blank">
-            Envoyer un message
-        </a>
-    </p>
+<a class="btn" href="https://wa.me/33631220952" target="_blank">
+Envoyer un message
+</a>
 
-    <p>📞 Téléphone : 
-        <a href="tel:+33631220952">
-            06 31 22 09 52
-        </a>
-    </p>
 </section>
+
+</body>
+</html>
