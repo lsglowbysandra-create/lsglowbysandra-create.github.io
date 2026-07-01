@@ -646,3 +646,28 @@ footer a{
         </a>
     </p>
 </section>
+    
+<!-- CONTACT -->
+<section id="contact">
+   ...
+</section>
+
+<!-- ZOOM (HTML) -->
+<div id="zoomModal" onclick="this.style.display='none'" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;text-align:center;">
+    <img id="zoomImg" style="max-width:90%;max-height:90%;margin-top:5%;">
+</div>
+
+<!-- JAVASCRIPT (TOUT À LA FIN) -->
+<script>
+window.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.card-images img').forEach(img => {
+        img.addEventListener('click', function () {
+            document.getElementById('zoomModal').style.display = 'block';
+            document.getElementById('zoomImg').src = this.src;
+        });
+    });
+});
+</script>
+
+</body>
+</html>
