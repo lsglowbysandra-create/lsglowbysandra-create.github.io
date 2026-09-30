@@ -159,10 +159,11 @@ footer a{
 }
 /* BOUTIQUE - ALIGNEMENT DES MODELES */
 #boutique .grille {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
     gap: 30px;
+    justify-content: center;
+    align-items: start;
 }
 
 #boutique .card {
